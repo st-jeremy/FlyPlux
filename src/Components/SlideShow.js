@@ -24,9 +24,9 @@ const zoomOutProperties = {
 };
 
 const mystyle = {
-    height: "100vh",
-    padding: "0 2%",
-    width: "100vw"
+    height: "90vh",
+    padding: "0 3%",
+    width: "100%"
   };
 
 const SlideShow = () => {
