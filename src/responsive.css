@@ -1,0 +1,301 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    *{
+        width: 100%;
+    }
+
+    .Header .column2{
+      float: none;
+    }
+    .Header .column1 h1{
+      font-size: 250%;
+    }
+    #airplane{
+        height: fit-content;
+        width: 8%;
+        margin-right: 5%;
+    }
+    #menu{
+        height: fit-content;
+        width: 8%;
+    }
+    .Header .column2 h1{
+        font-size: 220%;
+        position: absolute;
+        bottom: 20%;
+        text-align: left;
+    }
+    .Header .column1 p{
+      font-size: 100%;
+      position: absolute;
+      bottom: 15%;
+    }
+    .Header .column2 .btn{
+      position: absolute;
+      bottom: 10%;
+    }
+    .link{
+      display: none;
+    }
+    .headerBtn{
+      position: absolute;
+      right: 3%;
+    }
+
+    /* Mission */
+    .Mission{
+      margin-bottom: 30%;
+    }
+    .Body .Mission .column1{
+      float: none;
+      clear: both;
+      display: none;
+      visibility: hidden;
+    }
+  
+    .Mission .column2{
+      margin: -45% 0 0 0;
+      float: none;
+      width: 100%;
+      padding: 8% ;
+    }
+    .Mission .column2 h1{
+      font-size: 100%;
+    }
+    hr{
+        width: 100%;
+    }
+    .Mission .column2 p{
+        font-size: 100%;
+    }
+    .Mission .column2 .col{
+      width: 100%;
+      font-size: 60%;
+      text-align: justify;
+      margin-right: -10%;
+      padding-right: -10%;
+    }
+
+    /* Services */
+    .Services{
+      padding-top: 5%;
+    }
+    .Services .col2{
+      width: 100%;
+      height: 60%;
+      padding: 10%;
+    }
+    .Services .col2 h2{
+        font-size: 100%;
+        margin-top: -8%;
+      }
+    .Services .col2 .flex{
+      font-size: 50%;
+      margin-top: -122%;
+      position: absolute;
+      color: white;
+    }
+    .Services .col2 button{
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+        font-size: smaller;
+    }
+    .Services .onDemand{
+        background-size:100% 100%;
+    
+        width: 100%;
+    }
+    .unhide{
+        font-size: 100%;
+        color: white;
+        position: absolute;
+        right: -5%;
+        top: 325%;
+    }
+    .hide{
+        display: block;
+        position: absolute;
+        right: -5%;
+        top: 320%;
+        font-size: 60%;
+        width: 100%;
+        float: none;
+    }
+    .Body .Services .sharedFlight{
+      height: 60%;
+    }
+    .Destinations .column1{
+        display: none;
+    }
+    .Destinations .column2{
+        width: 100%;
+        float: clear;
+    }
+    .MobileApp .column1{
+       width: 100%;
+    }
+    .MobileApp .column2{
+        float: clear;
+        width: 100%;
+        height: fit-content;
+    }
+    .Experience h1{
+        font-size: 300%;
+      }
+      .Experience .column1{
+        width: 100%;
+        float: clear;
+        padding: 0 5%;
+        font-size: 100%;
+      }
+      .Experience button{
+        width: 30%;
+        position: relative;
+      }
+      .Experience .column2{
+        width: 100%;
+        column-count: 1;
+      }
+      .Experience .col{
+        width: 100%;
+        padding: -3%;
+        /* margin: -10% 0; */
+      }
+      .Experience .column2 img{
+        width: 10%;
+        height: 10%;
+      }
+      .Experience .col img{
+        font-size: 80%;
+        margin-bottom: -6%;
+      }
+      .Experience .col p{
+        font-size: 80%;
+        margin-bottom: -6%;
+      }
+     .Experience .col h3{
+        font-size: 120%;
+        margin-bottom: -4%;
+      }
+
+    
+      .SlideShow{
+        height: 70vh;
+        width: 100%;
+      }
+
+      .Booking{
+        height: 70vh;
+        margin-top: 10%;
+      }
+      .Booking h3{
+        color: grey;
+        margin-top: 10%;
+      }
+      .Booking h1{
+        font-size: 300%;
+      }
+      .Booking h1:hover{
+        font-size: 350pt;
+        text-decoration:dashed;
+        transition-duration: 500ms;
+      }
+      .Footer{
+        font-size: smaller;
+        height: fit-content;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .Footer .log{
+        float: left;
+        width: 40%;
+      }
+      .Footer .footcol1{
+        /* margin-top: -10%; */
+        width: 60%;
+        font-size: 60%;
+        float: right;
+        position: absolute;
+        right: -30%;
+      }
+      .footcol2{
+        float: right;
+        font-size: 80%;
+        width: 100%;
+      }
+      .col3{
+        width: 33.1%;
+      }
+      .footrow2{
+        margin-top: 0%;
+      }
+  }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .Header .column1 h1{
+        font-size: 400%;
+        width: 100%;
+      }
+      .Header .column2{
+        width: 100%;
+        float: none;
+      }
+      .link{
+        display: none;
+      }
+      .pAviation{
+        position: relative;
+        display: block;
+        float: none;
+        font-size: 50%;
+        width: 100%;
+        text-align: left;
+      }
+      #airplane{
+        right: 2%;
+        width: 7%;
+      }
+      
+      #menu{
+        position: absolute;
+        right: 2%;
+        top: 12%;
+        width: 7%;
+      }
+      .Header .column2 .btn{
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 10%;
+        margin-top: 20%
+      }
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+

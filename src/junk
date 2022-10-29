@@ -1,0 +1,395 @@
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: larger;
+  max-width:100vw;
+  font-family: MuseoModerno;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button{
+  font-weight: bolder;
+  font-family: MuseoModerno;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  width: 90%;
+  margin-left: -1%;
+}
+
+/* Header */
+.Header {
+  background-image: url(./images/download.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0 2%;
+  height: 100vh;
+}
+
+.Header .column1{
+  float: left;
+  width: 65%;
+}
+
+.Header .column1 h1{
+  font-size: 775%;
+  margin-top: 3%;
+}
+
+.Header .column1 p{
+  position: absolute;
+  bottom: 3%;
+}
+
+.Header .column2{
+  width: 35%;
+  float: right;
+  display: flexbox;
+}
+
+.headerBtn{
+  float: right;
+}
+
+#airplane{
+  position: absolute;
+  right: 12%;
+  top: 4%;
+  width: 5%;
+}
+
+#menu{
+  position: absolute;
+  right: 5%;
+  top: 4%;
+  width: 5%;
+}
+
+#small{
+  width:5%; 
+  display:inline-block
+}
+
+#large{
+  width:30%; 
+  display:inline-block
+}
+
+.Header a{
+  color: black;
+}
+
+.Header .column2 h1{
+  font-size: 240%;
+  text-align: right;
+}
+.Header .column2 button{
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 1% 2%;
+  border: none;
+  /* gap: 50%; */
+}
+
+.Header .column2 .btn{
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  width: 70%;
+  gap: 5%;
+}
+/* Body */
+section{
+  margin-top: 0%;
+}
+
+/* Mission */
+.Mission .column2{
+  width: 60%;
+  position: absolute;
+  right:4%;
+}
+
+.Mission h1{
+  font-size: 210%;
+}
+
+.Mission .column2 .col{
+  width: 43%;
+  float: left;
+  gap: 60%;
+}
+
+.Mission .column2 p{
+  color: grey;
+  font-size: 90%;
+}
+
+/* Services */
+.Body .Services{
+  margin-top: 70%;;
+  display: block;
+  height: 100vh;
+}
+
+.Services .col2{
+  float: left;
+  width: 33.3%;
+  padding: 1% 5%;
+  gap: 1%;
+}
+
+.Services .flexibleServices{
+  color: white;
+  background-color: black;
+  height: 100%;
+}
+
+.flexibleServices p{
+  bottom: 80%;
+  margin-top: 100%;
+  color: white;
+  margin-top: 130%;
+}
+
+.flexibleServices button{
+  border-radius: 30px;
+  padding: 3%;
+  background-color: black;
+  color: white;
+  border: white solid;
+}
+
+.Services .onDemand{
+  background-image: url(./images/privatejet.png);
+  background-size:cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#onDemand{
+  margin-top: 180%;
+}
+
+.hide{
+  display: none;
+  font-weight: bolder;
+}
+
+.unhide:hover + .hide {
+  display: block;
+  color: rgb(246, 246, 243);
+  font-size: smaller;
+}
+
+.Body .Services .sharedFlight{
+  color: white;
+  background-image: url(./images/SharedFlight.png);
+  background-size: 100%;
+  background-color: rgb(188,113,85);
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Destinations */
+.Destinations{
+  padding-left: 5%;
+  margin-bottom: -300%;
+}
+.Destinations .column1{
+  float: left;
+  width: 45%;
+  height: 100vh;
+}
+.Destinations img{
+  height: 60%;
+  width: 95%;
+  border-radius: 0 0 30px 0;
+}
+
+.Destinations .column2{
+  width: 45%;
+  float: right;
+}
+
+.Destinations .col{
+  width: 43%;
+  float: left;
+  margin-bottom: 5%;
+  gap: 60%;
+}
+
+/* MobileApp */
+.MobileApp{
+  height: 100vh;
+  width: 100%;
+  clear: both;
+}
+
+.MobileApp .column1{
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin-top: -10%;
+}
+
+.MobileApp img{
+  width: 100%;
+  height: 100%;
+}
+
+.MobileApp .column2{
+  width: 50%;
+  background-color: rgb(21,22,35);
+  color: white;
+  height: 99.5%;
+  float: right;
+  padding: 0 5%;
+  text-align: justify;
+  margin-top: -10%;
+}
+
+.MobileApp .column2 h1{
+  font-size: 300%;
+}
+
+.MobileApp .column2 h4{
+  display: block;
+  position:relative;
+  bottom: 4%
+}
+
+/* Experience */
+.Experience{
+  width: 100vw;
+  height: fit-content;
+  margin-top: -20%;
+}
+
+.Experience h1{
+  font-size: 650%;
+  margin-bottom: -3%;
+  padding: 2%;
+}
+
+.Experience .column1{
+  width: 45%;
+  float: left;
+  padding: 0 5%;
+}
+.Experience button{
+  border-radius: 30px;
+  position: absolute;
+  bottom: unset;
+  padding: 1%;
+  background-color: black;
+  color: white;
+ 
+}
+
+.Experience .column2{
+  width: 55%;
+  column-count: 2;
+}
+
+.Experience .col{
+  width: 100%;
+  padding: 3%;
+}
+
+.Experience .col p{
+  font-size: smaller;
+}
+
+
+/* SlideShow */
+.SlideShow{
+  height: 100vh;
+}
+
+@keyframes textDrop{
+  from {top: 6%}
+  to {bottom: 2%;}
+}
+
+.Booking{
+  background-image: linear-gradient(
+    to top, 
+    rgb(148,173,199) 0%,
+    rgb(167, 181, 195) 30%,
+    rgb(237, 239, 242) 60%,
+    white 80%,
+    white 100%
+  );
+  height: 100vh;
+  text-align: center;
+  animation-name: textDrop;
+  animation-duration: 5s ;
+  padding: 10% 3%;
+  }
+
+  .Booking h3{
+    color: grey;
+  }
+
+  .Booking h1{
+    font-size: 92pt;
+  }
+
+  .Booking h1:hover{
+    font-size: 100pt;
+    text-decoration:dashed;
+    transition-duration: 500ms;
+  }
+
+  .Footer{
+    background-color: black;
+    color: white;
+    height: 60vh;
+    padding: 1% 4%;
+  }
+  .Footer button{
+    border-radius: 50%;
+    padding: 1%;
+    margin-right: 2%;
+    width: 8%;
+  }
+
+  .footcol1{
+    width: 35%;
+    float: left;
+    
+  }
+  .footcol2{
+    width: 65%;
+    float: right;
+    height: fit-content;
+  }
+  .col3{
+    width: 30%;
+    height: 50%;
+    float: left;
+  }
+  .footrow2{
+    margin-top: 17%;
+  }
+

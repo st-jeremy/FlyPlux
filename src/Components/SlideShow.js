@@ -15,7 +15,7 @@ import image10 from "../images/Slide10.jpeg";
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
 const zoomOutProperties = {
-    duration: 3000,
+    duration: 2000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,
@@ -24,9 +24,9 @@ const zoomOutProperties = {
 };
 
 const mystyle = {
-    height: "90vh",
-    padding: "0 3%",
-    width: "100%"
+    // height: "",
+    padding: "0 5%",
+    // width: "100%"
   };
 
 const SlideShow = () => {

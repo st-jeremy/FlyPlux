@@ -1,6 +1,11 @@
+import Header from "./Header";
+
 const Contact = () => {
+
     return ( 
-        <div className="Contact">
+        <div className="contactUs">
+            <Header />
+
             
         </div>
      );
