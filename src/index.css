@@ -16,34 +16,41 @@ body {
 img{
   width: 100%;
 }
-
-@keyframes changingColors {
-  0%   {background-color: rgb(238, 217, 217);}
-  25%  {background-color: rgb(234, 235, 249);}
-  50%  {background-color: rgb(225, 225, 246);}
-  100% {background-color: rgb(238, 232, 218);}
-}
-button{
-  font-family: MuseoModerno;
-  padding: .7rem;
-  border-radius: 10px;
-  border: none;
-  animation-name: changingColors;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
 a{
   text-decoration: none;
   color: rgb(51, 47, 47);
 }
 
-/* Components */
-.header, .mission, .destination, .experience, .bookFlight, .footer {
-  padding: 5%;
+/* Animations */
+@keyframes changingColors {
+  0%   {background-color: rgb(210, 73, 73);}
+  25%  {background-color: rgb(234, 235, 249);}
+  50%  {background-color: rgb(72, 72, 220);}
+  100% {background-color: rgb(236, 193, 93);}
+}
+@keyframes textDrop {
+  0%   {margin-top: -4rem;}
+  25%  {margin-top: -3rem;}
+  50%  {margin-top: -2rem;}
+  75%  {margin-top: -1rem;}
+  100% {margin-top: auto;}
 }
 
+/* Components */
+.header, .mission, .destination, .experience, .contact, .bookFlight, .footer {
+  padding: 1% 5%;
+}
+.header button, .services button, .experience .row2 .col1 button{
+  font-family: MuseoModerno;
+  padding: .7rem;
+  border-radius: 10px;
+  border: none;
+  animation-name: changingColors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
 /* App */
 .app{
   max-width: 1900px;
@@ -52,18 +59,35 @@ a{
 
 /* Header */
 .header {
-  background-image: url(./images/download.png);
+  background-image: url(./images/background1.png);
   background-repeat: no-repeat;
-  height: fit-content;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  font-weight: 900;
 }
 .header .row1 .col1{
-  width: 50%;
+  width: 80%;
+}
+.header .row1 .col1 h1{
+  margin-top: 0%;
+  font-size: 50pt;
+  color: rgb(2, 2, 30);
+  animation-name: textDrop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease; */
+}
+.header .row1 .col1 p{
+  margin-top: -15%;
+}
+.header .row{
+  position: absolute;
+  bottom: 17%;
 }
 .header .row1 .col2 .links{
   display: none;
-  display: flex;
-  flex-direction: row;
-  width: 25%;
 }
 .header .row1 .col2 .links a{
   margin-right: 1rem;
@@ -72,15 +96,37 @@ a{
 .header .col2 .icon{
   position: absolute;
   top: 5%;
-  right: 10%;
+  right: 7%;
+}
+.header .btn{
+  position: absolute;
+  bottom: 2%;
 }
 .header .btn button{
-  margin-right: 1rem;
+  margin: auto 1rem .3rem auto;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  animation: none;
+}
+.header a.active{
+  font-weight: 900;
 }
 
+/* Body Component */
+
 /* Mission */
-.box .mission .col .box p{
-  color: black;
+.mission .col h1{
+  line-height: 120%;
+}
+.mission .col .box{
+  border-top: 1px solid black;
+}
+.mission .col .box p{
+  color: rgb(80, 76, 76);
+  animation-name: textDrop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
 }
 
 /* Services */
@@ -91,16 +137,14 @@ a{
   background-color: rgb(21,22,35);
   color: white;
   padding: 5%;
-}
-.services .flexServices p{
-  margin-top: 45%;
+  height: fit-content;
 }
 .services .onDemand{
   background-image: url(./images/privatejet.png);
-  background-size:100%;
-  padding: .1% 5%;
+  background-size:100% 100%;
+  padding: 50% 5% 0%;
   background-repeat: no-repeat;
-  color: rgb(240, 239, 238);
+  color: white;
   font-weight: 900;
 }
 .services .sharedFlight{
@@ -113,12 +157,15 @@ a{
 }
 
 /* Destination */
+.destination{
+  margin-bottom: 3rem;
+}
 .destination .col1{
   display: none;
 }
 .destination .col2{
   width: 100%;
-  margin: auto;
+  columns: 2;
 }
 .destination .col2 .box{
   width: 100%;
@@ -129,7 +176,11 @@ a{
 }
 .destination .col2 .box h3{
   margin-bottom: 4rem;
+  animation-name: textDrop;
+  animation-duration: .9s;
+  animation-iteration-count: 1;
 }
+
 
 /* Mobile App */
 .mobileApp{
@@ -149,6 +200,15 @@ a{
 .experience img{
   max-width: 5rem;
 }
+.experience .row2 .col1{
+  text-align: justify;
+  animation-name: textDrop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+.experience .row2 .col1 button{
+  display: none;
+}
 .experience .col2{
   margin-top: 3rem;
 }
@@ -158,60 +218,215 @@ a{
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
+.experience .col2 .box p{
+  animation-name: textDrop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+}
 
 /* Slide show */
-.slideShow button{
-  background-color: blue;
+.slideShow{
   animation: none;
 }
 
 /* bookFlight */
 .bookFlight{
   background-image: linear-gradient(
-    to top, 
-    rgb(148,173,199) 0%,
-    rgb(183, 208, 233) 50%,
-    white 100%
+    to bottom,
+    white 0%,
+    rgb(183, 208, 233) 20%,
+    rgb(148,173,199) 100%
     );
     height: fit-content;
     text-align: center;
+    margin: auto;
+    animation: changingColor;
   }
   .bookFlight h1 :hover{
     font-size: 20pt;
     font-weight: 700;
     text-shadow: rgb(21,22,35);
     transition-duration: 500ms;
+    cursor: grab;
   }
   .bookFlight h4{
     transition: 2000ms;
   }
 
+  /* Solutions */
+  .solutions{
+    padding: 5%;
+  }
+
+  /* About Us */
+  .aboutUs{
+    padding: 5%;
+    background-color: rgb(138,173,178);
+  }
+  .aboutUs .row .col2 .box img{
+    width: 70px;
+    margin-bottom: -10%;
+  }
+  .aboutUs .row .col2 .box{
+    margin-bottom: 2rem;
+  }
+
+  /* Contact */
+  .contact{
+    padding: 5%;
+  }
+  .contact .col2 .box {
+    display: flex;
+  }
+  .contact .col2 .box .cell{
+    width: 70%; 
+  }
+  .contact .col2 .box .pic{
+    width: 20%; 
+  }
+  .contact .col label{
+    font-size: 18pt;
+    font-weight: 800;
+  }
+  .contact input, textarea{
+    border-radius: 20px;
+    padding: 3%;
+    width: 100%;
+  }
+  .contact .col{
+    align-items: center;
+    display: flex;
+  }
+  .contact .col form{
+    margin: auto;
+  }
+  .contact .col button{
+    border-radius: 30px;
+    width: 10rem;
+    font-size: 20pt;
+    font-weight: 900;
+    align-items: center;
+    padding: 2%;
+  }
+  
+
+  /* Footer */
+  .footer{
+    background-color: black;
+    color: white;
+  }
   .footer .row1{
     display: flex;
   }
-  .footer .row1 .box{
+  .footer .row1 .socialMedia{
+    position: absolute;
+    right: 0%;
     margin-right: 2rem;
+    text-align: right;
+  }
+  .footer a{
+    color: rgb(186, 183, 183);
   }
 
+
+/* Phone (L) */
+@media only screen and (min-width: 425px) {
+  .header .row{
+    position: absolute;
+    bottom: 8%;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  .header .row{
+    margin: auto;
+  }
+  .header .btn{
+    margin-top: 12rem;
+  }
+}
+
+
 /* Tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {  
+  .header {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    font-weight: 900;
+  }
+  .header .row1 .col1 h1{
+    font-size: 90pt;
+  }
+  .header .row1 .col1 p{
+    background-color: rgba(255, 255, 255, 0.167);
+  }
+  .header .btn{
+    position: absolute;
+    bottom: 0%;
+  }
+  .services{
+    display: flex;
+  }
+  .services .box{
+    max-height: 19rem;
+  }
   .services .flexServices p{
     margin-top: auto;
   }
-  .destination .col2 .box{
-    width: 30%;
-    float: right;
-    margin-right: .95rem;
+  .services .onDemand{
+    padding: 5% 2% 0%;
+    color: black;
+  }
+  .services .onDemand p{
+    margin: 9.3rem -1.1rem 0%;
+    padding: 0% .5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.435);
+  }
+  .services .sharedFlight{
+    background-size: 50% 80%;
+    padding: 1rem;
+  }
+  .services .box{
+    width: 33.3%;
   }
   .services .onDemand{
     background-size:100% 130%;
     color: white;
   }
   .services .sharedFlight{
-    background-size: 70% 100%;
+    color: white;
+    background-image: url(./images/SharedFlight.png);
+    padding: 5%;
+    background-size: 100%;
+    background-color: rgb(188,113,85);
+    background-repeat: no-repeat;
+  }
+  .destination .col2{
+    columns: 3;
   }
   .experience .col2{
     display:flexbox;
+    columns: 2;
+  }
+  .experience .col2 .box{
+    height: 19rem;
+  }
+  .bookFlight{
+    height: 50vh;
+  }
+  .bookFlight h1{
+    font-size: 64pt;
+  }
+  .contact input, textarea{
+    width: 30rem;
+    margin: auto;
+    align-content: center;
+    margin-bottom: 2rem;
   }
   .footer .row1 .box{
     width: 50%;
@@ -230,30 +445,98 @@ a{
   }
 }
 
+
+@media only screen and (min-width: 820px) {
+  .header{
+    height: 35rem;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 50%;
+  }
+  .header .btn{
+    position: absolute;
+    bottom: 45%;
+  }
+  .services .onDemand p{
+    margin-top: 8rem;
+  }
+  .bookFlight{
+    height: 15rem;
+  }
+}
+
+
 /* Small Laptop */
 @media only screen and (min-width: 1024px) {
+  .mission, .services, .destination, .mobileApp{
+    margin-bottom: 5rem;
+  }
   .header .row1{
     display: flex;
+  }
+  .header .row1 .col1{
+    width: 75%;
+  }
+  .header .row1 .col1 h1{
+    font-size: 110pt;
+    margin-bottom: 7rem;
   }
   .header .col2 .links{
     display: block;
   }
-  
-  .services{
+  .header .row1 .col2 .links{
+    margin-right: 0%;
     display: flex;
+    flex-direction: row;
+  }
+  .header .row1 .col2 .links a{
+    margin: 5% 2% 0% 0%;
+    width: 6rem;
+  }
+  .header .col2 .icon{
+    margin-top: 4rem;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 4%;
+  }
+  .header .btn{
+    position: absolute;
+    right: 0%;
+    bottom: 4%;
+  }
+  .mission .col h1{
+    font-size: 39pt;
+    font-family:sans-serif;
+    padding-left: 40%;
+    line-height: 100%;
+    text-align: justify;
+  }
+  .mission .outer{
+    padding-left: 40%;
+    columns: 2;
+  }
+  .mission .col .box {
+    height: 12rem;
+    text-align: justify;
   }
   .services .box{
-    height: 30rem;
+    min-height: 30rem;
+    padding: 3%;
   }
   .services .flexServices p{
-    margin-top: 16rem;
+    margin-top: 15rem;
   }
-  .services .onDemand{
-    padding-top: 38%;
+  .services .onDemand p{
+    margin-top: -1rem;
+    background-color: rgba(240, 248, 255, 0);
   }
   .services .sharedFlight{
-    background-size: 100%;
-    padding-top: 38%;
+    padding-top: 21rem;
+  }
+  .destination h1{
+    font-size: 50pt;
   }
   .destination .col1{
     display: block;
@@ -261,47 +544,79 @@ a{
     float: left;
     margin-left: .1rem;
   }
+  .destination .col1 img{
+    height: 30rem;
+  }
   .destination .col2{
-    width: 48%;
+    columns: 2;
+    width: 49%;
     float: right;
+    height: fit-content;
   }
   .destination .col2 .box{
-    width:40%;
+    margin-bottom: .5rem;
   }
   .mobileApp{
     clear: both;
+    float: none;
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: auto;
   }
   .mobileApp .col1, .mobileApp .col2{
+    margin: 5rem 1rem auto auto;
+    padding: 2%;
     width: 50%;
-    height: 30rem;
+    height: 22rem;
+    border-radius: 30px;
   }
   .experience .row1{
-    font-size: 120pt;
+    font-size: 100pt;
+    margin-bottom: 0%;
   }
   .experience .row2{
     display: flex;
+    margin-right: -2rem;
   }
   .experience .row2 .col1{
-    width: 40%;
+    width: 33%;
+  }
+  .experience .row2 .col1 button{
+    display: block;
   }
   .experience .row2 .col2{
-    width: 60%;
+    width: 55%;
+    margin:auto ;
     display: flexbox;
   }
   .experience .row2 .col2 .box{
-    width: 40%;
-    margin-right: .5rem;
+    height: 20rem;
+    padding: 0%;
+    margin-bottom: 4rem;
+    border: none;
+    text-align: justify;
   }
   .bookFlight{
-    height: 100vh;
+    height: 60vh;
     padding: auto;
     margin: 15rem auto 0;
     font-size: x-large;
+    animation-name: changingColors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+.header{
+  height: 100vh;
+}
 }
 
 @media only screen and (min-width: 1900px) {
@@ -309,8 +624,9 @@ a{
     margin: auto 10%;
     border: .5px solid rgb(236, 234, 234);
   }
-
 }
+
+
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   .body, .header, .mission, .destination, .experience, .footer, .slideShow{

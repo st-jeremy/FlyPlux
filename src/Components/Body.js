@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import { MdArrowForward } from 'react-icons/md';
 import pic from "../images/privatejet.png";
-import phone from "../images/mobile.png";
+import phone from "../images/mobile-app.png";
 import Flightmanager from '../images/Flightmanager.png';
 import AddOn from '../images/Add-on.png';
 import digitalcare from '../images/digitalcare.png';
@@ -15,42 +17,46 @@ const Body = () => {
         <div className="body">
 
             <div className="mission" id='mission'>
+                <hr/>
+
                 <div className="col">
-                    <h3>
+                    <h1>
                         We believe that in a world where passengers have become numbers, a personal approach is key to ensure you get the most out of your flying experience.
-                    </h3>
+                    </h1>
 
-                    <div className="box">
-                        <h4>Smart Quotes</h4>
-                        <p>
-                            Know what you are paying for. No hidden fees. No overpromises. Flights suitable for your needs.
-                        </p>
-                    </div>
+                    <div className="outer">
+                        <div className="box">
+                            <h4>Smart Quotes</h4>
+                            <p>
+                                Know what you are paying for. No hidden fees. No overpromises. Flights suitable for your needs.
+                            </p>
+                        </div>
 
-                    <div className="box">
-                        <h4>Flexible Solutions</h4>
-                        <p>Stop depending on airlines. Fly on your own terms or join our exclusive shared flights.</p>
-                    </div>
+                        <div className="box">
+                            <h4>Flexible Solutions</h4>
+                            <p>Stop depending on airlines. Fly on your own terms or join our exclusive shared flights.</p>
+                        </div>
 
-                    <div className="box">
-                        <h4>Fully Customizable</h4>
-                        <p>
-                            Control all aspects of your journey. Easily upgrade services with our add-ons.
-                        </p> 
-                    </div>
+                        <div className="box">
+                            <h4>Fully Customizable</h4>
+                            <p>
+                                Control all aspects of your journey. Easily upgrade services with our add-ons.
+                            </p> 
+                        </div>
 
-                    <div className="box">
-                        <h4>Personalization</h4>
-                        <p>
-                            Receive full support of our Flight Management service. We have you covered, anywhere.
-                        </p>
+                        <div className="box">
+                            <h4>Personalization</h4>
+                            <p>
+                                Receive full support of our Flight Management service. We have you covered, anywhere.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="services" id='services'>
                 <div className="flexServices box">
-                    <h3>Flexible Services<MdArrowForward /></h3>
+                    <h2>Flexible Services <MdArrowForward /></h2>
                     <div className="flex">
                         <p>
                             Smart solutions for all your charter requirements
@@ -60,16 +66,16 @@ const Body = () => {
                 </div>
 
                 <div className="onDemand box">
-                    <h3 className="unhide">
-                        On Demand<MdArrowForward />
-                    </h3>
+                    <h2 className="unhide">
+                        On Demand <MdArrowForward />
+                    </h2>
                     <p className="hide">
                         Book your aircraft. Customize all aspects of your journey
                     </p>
                 </div>
 
                 <div className="sharedFlight box">
-                    <h3>Shared Flights<MdArrowForward /></h3>
+                    <h2>Shared Flights <MdArrowForward /></h2>
                     <p>Fly private for the fraction of the price.</p>
                 </div>
             </div>
@@ -82,24 +88,24 @@ const Body = () => {
 
                 <div className="col2">
                     <div className="box">
-                        <h3>Ankara (AKR)</h3>
-                        <h4>Turkey</h4>
+                        <h3>Suva (SUV)</h3>
+                        <h4>Fiji</h4>
                     </div>
                     <div className="box">
-                        <h3>Morocco (MRC)</h3>
-                        <h4>Morocco</h4>
+                        <h3>Paris (PAR)</h3>
+                        <h4>France</h4>
                     </div>
                     <div className="box">
                         <h3>Cairo (CAR)</h3>
                         <h4>Egypt</h4>
                     </div>
                     <div className="box">
-                        <h3>Florida (FLR)</h3>
-                        <h4>United States</h4>
+                        <h3>Malé (MAL)</h3>
+                        <h4>Maldives</h4>
                     </div>
                     <div className="box">
-                        <h3>London (LON)</h3>
-                        <h4>UK</h4>
+                        <h3>Riga (RIG)</h3>
+                        <h4>Latvia</h4>
                     </div>
                     <div className="box">
                         <h3>Dubai (DUB)</h3>
@@ -112,6 +118,7 @@ const Body = () => {
                 <div className="col1">
                     <img src={ phone } alt="MobileApp" />
                 </div>
+
                 <div className="col2">
                     <h1>Flight Manager</h1>
                     <p>
@@ -196,7 +203,8 @@ const Body = () => {
 
             <div className='bookFlight' id='bookFlight'>
                 <h4>What are you waiting for?</h4>
-                <h1>Book a Flight</h1>
+                <Link to='/'><h1>Book a Flight</h1></Link>
+                
             </div>
         </div>
     );

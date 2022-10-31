@@ -12,8 +12,8 @@ const Footer = () => {
 
                 <div className="box socialMedia">
                     <h4>Follow us</h4>
-                    <ImFacebook2 />
-                    <BsInstagram />
+                    <ImFacebook2 /><br />
+                    <BsInstagram /><br/>
                     <AiFillLinkedin />
                 </div>
             </div>
@@ -37,7 +37,6 @@ const Footer = () => {
                     <a href="/">News</a><br />
                     <a href="/">Contact</a>
                 </div>
-
             </div>
             <br />
 

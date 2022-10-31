@@ -1,5 +1,6 @@
 import { FiMenu } from 'react-icons/fi';
 import { MdAirplanemodeActive } from 'react-icons/md';
+import { NavLink } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -17,21 +18,24 @@ const Header = () => {
         <div className="header" id='header'>
             <div className="row1">
                 <div className="col1">
-                    <h1>FlyPlux<sup>®</sup></h1>
+                    <NavLink to="/">
+                        <h1>FlyPlux<sup>®</sup></h1>
+                    </NavLink>
                     <p>More flexibility, freedom and choice!</p>
+                    
                 </div>
 
                 <div className="col2">
                     <div className="links">
-                        <a href="./AboutUs.js">About Us</a>
-                        <br />
-                        <a href="./Contact.js">Contact Us</a>
+                        <NavLink to="/Solutions">Solutions</NavLink>
+                        <NavLink to="/AboutUs">About Us</NavLink>
+                        <NavLink to="/Contact">Contact Us</NavLink>
                     </div>
 
                     <div className="icon">
                         <MdAirplanemodeActive  />
                         <br />
-                        <FiMenu onclick={hamburger}/>
+                        <FiMenu onclick={() => hamburger()}/>
 
                         {/* <div id="myLinks">
                             <a href="#header">Home</a>
@@ -44,7 +48,7 @@ const Header = () => {
                 </div>
             </div>
                 
-            <div className="heading">
+            <div className="row">
                 <h2>Personalized Aviation</h2>
             </div>
 

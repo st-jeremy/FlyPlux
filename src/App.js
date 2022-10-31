@@ -1,34 +1,39 @@
-import './index.css';
+import {Routes, Route} from 'react-router-dom';
 
+import './index.css';
 import Header from './Components/Header';
 import Body from './Components/Body';
-// import Contact from './Components/Contact';
-// import AboutUs from './Components/AboutUs';
+import Contact from './Components/Contact';
+import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
+import Solutions from './Components/Solutions';
+// import NotFound from './Components/NotFound';
+import ContactSummary from './Components/ContactSummary';
 
-// import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    // <Router>
-    <div className="app">
-      <Header /> 
-      <Body />
-      {/* <Routes>
+      <div className="app">
+        <Header /> 
 
-        <Route path='./Components/Contact'>
-          <Contact />
-        </Route>
+        <Routes>
+          <Route path='/' element={ <Body /> } />
+            
+          <Route path='Contact' element={ <Contact /> } />
+          <Route path='ContactSummary' element={ <ContactSummary />} />
 
-        <Route path='./Components/AboutUs'>
-          <AboutUs />
-        </Route>
-        
-      </Routes> */}
-      <Footer />
-      
-    </div>
-    // </Router>
+          <Route path='AboutUs' element={ <AboutUs /> } />
+
+          <Route path='Solutions' element={ <Solutions /> } />
+
+          {/* <Route path="*" element={ <NotFound /> } /> */}
+
+        </Routes>
+
+        <Footer /> 
+
+      </div>
+
   );
 }
 
