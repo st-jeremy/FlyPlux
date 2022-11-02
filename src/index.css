@@ -12,7 +12,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
 img{
   width: 100%;
 }
@@ -29,10 +28,10 @@ a{
   100% {background-color: rgb(236, 193, 93);}
 }
 @keyframes textDrop {
-  0%   {margin-top: -4rem;}
-  25%  {margin-top: -3rem;}
+  0%   {margin-top: -6rem;}
+  25%  {margin-top: -4rem;}
   50%  {margin-top: -2rem;}
-  75%  {margin-top: -1rem;}
+  75%  {margin-top: 0rem;}
   100% {margin-top: auto;}
 }
 
@@ -53,31 +52,27 @@ a{
 }
 /* App */
 .app{
-  max-width: 1900px;
   overflow-x: hidden;
 }
+
 
 /* Header */
 .header {
   background-image: url(./images/background1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   font-weight: 900;
+  animation: none;
 }
 .header .row1 .col1{
   width: 80%;
 }
 .header .row1 .col1 h1{
   margin-top: 0%;
-  font-size: 50pt;
+  font-size: 45pt;
   color: rgb(2, 2, 30);
-  animation-name: textDrop;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  /* animation-direction: alternate; */
-  /* animation-timing-function: ease; */
 }
 .header .row1 .col1 p{
   margin-top: -15%;
@@ -96,11 +91,11 @@ a{
 .header .col2 .icon{
   position: absolute;
   top: 5%;
-  right: 7%;
+  right: 2%;
 }
 .header .btn{
   position: absolute;
-  bottom: 2%;
+  bottom: 11%;
 }
 .header .btn button{
   margin: auto 1rem .3rem auto;
@@ -111,6 +106,64 @@ a{
 }
 .header a.active{
   font-weight: 900;
+}
+.header h1, .header h2{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+/* Title */
+.title {
+  background-image: url(./images/download.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 160%;
+  height: 50vh;
+  width: 100%;
+  font-weight: 900;
+  border-bottom-right-radius: 100px;
+}
+.title .row1 .col1{
+  width: 80%;
+}
+.title .row1 .col1 h1{
+  margin-top: 0%;
+  font-size: 50pt;
+  color: rgb(2, 2, 30);
+  animation-name: textDrop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+.title .row1 .col1 p{
+  margin-top: -15%;
+}
+.title .row{
+  position: absolute;
+  bottom: 17%;
+}
+.title .row1 .col2 .links{
+  display: none;
+}
+.title .row1 .col2 .links a{
+  margin-right: 1rem;
+  color: black;
+}
+.title .col2 .icon{
+  position: absolute;
+  top: 5%;
+  right: 7%;
+}
+.title a.active{
+  font-weight: 900;
+}
+.title h1, .title h2{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
 }
 
 /* Body Component */
@@ -127,6 +180,14 @@ a{
   animation-name: textDrop;
   animation-duration: .3s;
   animation-iteration-count: 1;
+}
+.mission h1, .mission h4, .mission p{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-delay: 2s;
 }
 
 /* Services */
@@ -155,6 +216,14 @@ a{
   background-color: rgb(188,113,85);
   background-repeat: no-repeat;
 }
+.services h2, .services h4, .services p{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-delay: 2.5s;
+}
 
 /* Destination */
 .destination{
@@ -180,6 +249,14 @@ a{
   animation-duration: .9s;
   animation-iteration-count: 1;
 }
+.destination h1, .destination h3, .destination h4{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-delay: 3.2s;
+}
 
 
 /* Mobile App */
@@ -195,6 +272,15 @@ a{
   padding: 5%;
   text-align: justify;
 }
+.mobileApp h1, .mobileApp p{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-delay: 4s;
+}
+
 
 /* Experience */
 .experience img{
@@ -218,10 +304,12 @@ a{
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
-.experience .col2 .box p{
+.experience h3, .experience p{
   animation-name: textDrop;
-  animation-duration: .3s;
+  animation-duration: .5s;
   animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
   animation-delay: 5s;
 }
 
@@ -241,6 +329,7 @@ a{
     height: fit-content;
     text-align: center;
     margin: auto;
+    padding-top: 5rem;
     animation: changingColor;
   }
   .bookFlight h1 :hover{
@@ -252,6 +341,14 @@ a{
   }
   .bookFlight h4{
     transition: 2000ms;
+  }
+  .bookFlight h1, .bookFlight h4{
+    animation-name: textDrop;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-delay: 5s;
   }
 
   /* Solutions */
@@ -273,7 +370,7 @@ a{
   }
 
   /* Contact */
-  .contact{
+  .contact .content{
     padding: 5%;
   }
   .contact .col2 .box {
@@ -309,7 +406,40 @@ a{
     align-items: center;
     padding: 2%;
   }
+
+  /* ContactSummary */
+  .contactSummary .content{
+    padding: 5%;
+    text-align: center;
+  }
+  .contactSummary img{
+    height: 5rem;
+    width: 7rem;
+  }
+  .contactSummary button{
+    animation-name: changingColor;
+  }
+
+
+  /* Book Aircraft */
+  .bookAircraft .content{
+    padding: 5%;
+  }
+  .bookAircraft input{
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    margin-bottom: .9rem;
+    width: 12rem;
+  }
   
+  /* NotFound */
+  .notFound{
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+  }
 
   /* Footer */
   .footer{
@@ -329,334 +459,3 @@ a{
     color: rgb(186, 183, 183);
   }
 
-
-/* Phone (L) */
-@media only screen and (min-width: 425px) {
-  .header .row{
-    position: absolute;
-    bottom: 8%;
-  }
-}
-
-@media only screen and (min-width: 737px) {
-  .header .row{
-    margin: auto;
-  }
-  .header .btn{
-    margin-top: 12rem;
-  }
-}
-
-
-/* Tablet */
-@media only screen and (min-width: 768px) {  
-  .header {
-    background-image: url(./images/background.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100%;
-    font-weight: 900;
-  }
-  .header .row1 .col1 h1{
-    font-size: 90pt;
-  }
-  .header .row1 .col1 p{
-    background-color: rgba(255, 255, 255, 0.167);
-  }
-  .header .btn{
-    position: absolute;
-    bottom: 0%;
-  }
-  .services{
-    display: flex;
-  }
-  .services .box{
-    max-height: 19rem;
-  }
-  .services .flexServices p{
-    margin-top: auto;
-  }
-  .services .onDemand{
-    padding: 5% 2% 0%;
-    color: black;
-  }
-  .services .onDemand p{
-    margin: 9.3rem -1.1rem 0%;
-    padding: 0% .5rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.435);
-  }
-  .services .sharedFlight{
-    background-size: 50% 80%;
-    padding: 1rem;
-  }
-  .services .box{
-    width: 33.3%;
-  }
-  .services .onDemand{
-    background-size:100% 130%;
-    color: white;
-  }
-  .services .sharedFlight{
-    color: white;
-    background-image: url(./images/SharedFlight.png);
-    padding: 5%;
-    background-size: 100%;
-    background-color: rgb(188,113,85);
-    background-repeat: no-repeat;
-  }
-  .destination .col2{
-    columns: 3;
-  }
-  .experience .col2{
-    display:flexbox;
-    columns: 2;
-  }
-  .experience .col2 .box{
-    height: 19rem;
-  }
-  .bookFlight{
-    height: 50vh;
-  }
-  .bookFlight h1{
-    font-size: 64pt;
-  }
-  .contact input, textarea{
-    width: 30rem;
-    margin: auto;
-    align-content: center;
-    margin-bottom: 2rem;
-  }
-  .footer .row1 .box{
-    width: 50%;
-  }
-  .footer .row1 .socialMedia{
-    text-align: right;
-  }
-  .footer .row2 {
-    display: flex;
-    flex-direction: row;
-    line-height: 170%;
-  }
-  .footer .row2 .box{
-    margin-right: auto;
-    width: 25%;
-  }
-}
-
-
-@media only screen and (min-width: 820px) {
-  .header{
-    height: 35rem;
-  }
-  .header .row{
-    position: absolute;
-    bottom: 50%;
-  }
-  .header .btn{
-    position: absolute;
-    bottom: 45%;
-  }
-  .services .onDemand p{
-    margin-top: 8rem;
-  }
-  .bookFlight{
-    height: 15rem;
-  }
-}
-
-
-/* Small Laptop */
-@media only screen and (min-width: 1024px) {
-  .mission, .services, .destination, .mobileApp{
-    margin-bottom: 5rem;
-  }
-  .header .row1{
-    display: flex;
-  }
-  .header .row1 .col1{
-    width: 75%;
-  }
-  .header .row1 .col1 h1{
-    font-size: 110pt;
-    margin-bottom: 7rem;
-  }
-  .header .col2 .links{
-    display: block;
-  }
-  .header .row1 .col2 .links{
-    margin-right: 0%;
-    display: flex;
-    flex-direction: row;
-  }
-  .header .row1 .col2 .links a{
-    margin: 5% 2% 0% 0%;
-    width: 6rem;
-  }
-  .header .col2 .icon{
-    margin-top: 4rem;
-  }
-  .header .row{
-    position: absolute;
-    bottom: 4%;
-  }
-  .header .btn{
-    position: absolute;
-    right: 0%;
-    bottom: 4%;
-  }
-  .mission .col h1{
-    font-size: 39pt;
-    font-family:sans-serif;
-    padding-left: 40%;
-    line-height: 100%;
-    text-align: justify;
-  }
-  .mission .outer{
-    padding-left: 40%;
-    columns: 2;
-  }
-  .mission .col .box {
-    height: 12rem;
-    text-align: justify;
-  }
-  .services .box{
-    min-height: 30rem;
-    padding: 3%;
-  }
-  .services .flexServices p{
-    margin-top: 15rem;
-  }
-  .services .onDemand p{
-    margin-top: -1rem;
-    background-color: rgba(240, 248, 255, 0);
-  }
-  .services .sharedFlight{
-    padding-top: 21rem;
-  }
-  .destination h1{
-    font-size: 50pt;
-  }
-  .destination .col1{
-    display: block;
-    width: 50%;
-    float: left;
-    margin-left: .1rem;
-  }
-  .destination .col1 img{
-    height: 30rem;
-  }
-  .destination .col2{
-    columns: 2;
-    width: 49%;
-    float: right;
-    height: fit-content;
-  }
-  .destination .col2 .box{
-    margin-bottom: .5rem;
-  }
-  .mobileApp{
-    clear: both;
-    float: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .mobileApp .col1, .mobileApp .col2{
-    margin: 5rem 1rem auto auto;
-    padding: 2%;
-    width: 50%;
-    height: 22rem;
-    border-radius: 30px;
-  }
-  .experience .row1{
-    font-size: 100pt;
-    margin-bottom: 0%;
-  }
-  .experience .row2{
-    display: flex;
-    margin-right: -2rem;
-  }
-  .experience .row2 .col1{
-    width: 33%;
-  }
-  .experience .row2 .col1 button{
-    display: block;
-  }
-  .experience .row2 .col2{
-    width: 55%;
-    margin:auto ;
-    display: flexbox;
-  }
-  .experience .row2 .col2 .box{
-    height: 20rem;
-    padding: 0%;
-    margin-bottom: 4rem;
-    border: none;
-    text-align: justify;
-  }
-  .bookFlight{
-    height: 60vh;
-    padding: auto;
-    margin: 15rem auto 0;
-    font-size: x-large;
-    animation-name: changingColors;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-
-}
-
-@media only screen and (min-width: 1440px) {
-.header{
-  height: 100vh;
-}
-}
-
-@media only screen and (min-width: 1900px) {
-  body{
-    margin: auto 10%;
-    border: .5px solid rgb(236, 234, 234);
-  }
-}
-
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  .body, .header, .mission, .destination, .experience, .footer, .slideShow{
-    background-color: black;
-    color: white;
-  }
-  .body .services .onDemand{
-    color: white;
-    background-image:inherit;
-    height: fit-content;
-  }
-  .body .services .onDemand p{
-    color: white;
-    background-image:inherit;
-  }
-  .body .services .sharedFlight{
-    background-color: rgb(31, 13, 13);
-    color: white;
-  }
-  .experience .col2 .box{
-    background-color: black;
-    color: white;
-  }
-  .experience .col2 .box img{
-    background-color: white;
-    border-radius: 1px 1px 30px 1px ;
-  }
-  .bookFlight{
-    background-image:unset;
-    background-color: black;
-    
-  }
-}

@@ -38,7 +38,6 @@ const Footer = () => {
                     <a href="/">Contact</a>
                 </div>
             </div>
-            <br />
 
             <hr />
             <div className='row3'>

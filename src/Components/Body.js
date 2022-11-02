@@ -1,3 +1,4 @@
+import Header from './Header';
 import { Link } from 'react-router-dom';
 
 import { MdArrowForward } from 'react-icons/md';
@@ -15,9 +16,9 @@ import SlideShow from './SlideShow';
 const Body = () => {
     return ( 
         <div className="body">
+            <Header /> 
 
             <div className="mission" id='mission'>
-                <hr/>
 
                 <div className="col">
                     <h1>
@@ -187,12 +188,12 @@ const Body = () => {
                         </div>
 
                         <div className="box">
-                        <img src={ Flightmanager } alt=" Flight manager" />
-                        <h3>Personal Flight Manager</h3>
-                        <p>
-                            Our experts can support any trip and request, 24/7. From short business trips to large groups crossing the globe for leisure. Enjoy a stress-free booking process.
-                        </p>
-                    </div>
+                            <img src={ Flightmanager } alt=" Flight manager" />
+                            <h3>Personal Flight Manager</h3>
+                            <p>
+                                Our experts can support any trip and request, 24/7. From short business trips to large groups crossing the globe for leisure. Enjoy a stress-free booking process.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

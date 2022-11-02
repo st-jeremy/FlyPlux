@@ -1,301 +1,344 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-    html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    }
-    *{
-        width: 100%;
-    }
-
-    .Header .column2{
-      float: none;
-    }
-    .Header .column1 h1{
-      font-size: 250%;
-    }
-    #airplane{
-        height: fit-content;
-        width: 8%;
-        margin-right: 5%;
-    }
-    #menu{
-        height: fit-content;
-        width: 8%;
-    }
-    .Header .column2 h1{
-        font-size: 220%;
-        position: absolute;
-        bottom: 20%;
-        text-align: left;
-    }
-    .Header .column1 p{
-      font-size: 100%;
-      position: absolute;
-      bottom: 15%;
-    }
-    .Header .column2 .btn{
-      position: absolute;
-      bottom: 10%;
-    }
-    .link{
-      display: none;
-    }
-    .headerBtn{
-      position: absolute;
-      right: 3%;
-    }
-
-    /* Mission */
-    .Mission{
-      margin-bottom: 30%;
-    }
-    .Body .Mission .column1{
-      float: none;
-      clear: both;
-      display: none;
-      visibility: hidden;
-    }
-  
-    .Mission .column2{
-      margin: -45% 0 0 0;
-      float: none;
-      width: 100%;
-      padding: 8% ;
-    }
-    .Mission .column2 h1{
-      font-size: 100%;
-    }
-    hr{
-        width: 100%;
-    }
-    .Mission .column2 p{
-        font-size: 100%;
-    }
-    .Mission .column2 .col{
-      width: 100%;
-      font-size: 60%;
-      text-align: justify;
-      margin-right: -10%;
-      padding-right: -10%;
-    }
-
-    /* Services */
-    .Services{
-      padding-top: 5%;
-    }
-    .Services .col2{
-      width: 100%;
-      height: 60%;
-      padding: 10%;
-    }
-    .Services .col2 h2{
-        font-size: 100%;
-        margin-top: -8%;
-      }
-    .Services .col2 .flex{
-      font-size: 50%;
-      margin-top: -122%;
-      position: absolute;
-      color: white;
-    }
-    .Services .col2 button{
-        width: fit-content;
-        height: fit-content;
-        padding: 2%;
-        font-size: smaller;
-    }
-    .Services .onDemand{
-        background-size:100% 100%;
-    
-        width: 100%;
-    }
-    .unhide{
-        font-size: 100%;
-        color: white;
-        position: absolute;
-        right: -5%;
-        top: 325%;
-    }
-    .hide{
-        display: block;
-        position: absolute;
-        right: -5%;
-        top: 320%;
-        font-size: 60%;
-        width: 100%;
-        float: none;
-    }
-    .Body .Services .sharedFlight{
-      height: 60%;
-    }
-    .Destinations .column1{
-        display: none;
-    }
-    .Destinations .column2{
-        width: 100%;
-        float: clear;
-    }
-    .MobileApp .column1{
-       width: 100%;
-    }
-    .MobileApp .column2{
-        float: clear;
-        width: 100%;
-        height: fit-content;
-    }
-    .Experience h1{
-        font-size: 300%;
-      }
-      .Experience .column1{
-        width: 100%;
-        float: clear;
-        padding: 0 5%;
-        font-size: 100%;
-      }
-      .Experience button{
-        width: 30%;
-        position: relative;
-      }
-      .Experience .column2{
-        width: 100%;
-        column-count: 1;
-      }
-      .Experience .col{
-        width: 100%;
-        padding: -3%;
-        /* margin: -10% 0; */
-      }
-      .Experience .column2 img{
-        width: 10%;
-        height: 10%;
-      }
-      .Experience .col img{
-        font-size: 80%;
-        margin-bottom: -6%;
-      }
-      .Experience .col p{
-        font-size: 80%;
-        margin-bottom: -6%;
-      }
-     .Experience .col h3{
-        font-size: 120%;
-        margin-bottom: -4%;
-      }
-
-    
-      .SlideShow{
-        height: 70vh;
-        width: 100%;
-      }
-
-      .Booking{
-        height: 70vh;
-        margin-top: 10%;
-      }
-      .Booking h3{
-        color: grey;
-        margin-top: 10%;
-      }
-      .Booking h1{
-        font-size: 300%;
-      }
-      .Booking h1:hover{
-        font-size: 350pt;
-        text-decoration:dashed;
-        transition-duration: 500ms;
-      }
-      .Footer{
-        font-size: smaller;
-        height: fit-content;
-        float: none;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-      .Footer .log{
-        float: left;
-        width: 40%;
-      }
-      .Footer .footcol1{
-        /* margin-top: -10%; */
-        width: 60%;
-        font-size: 60%;
-        float: right;
-        position: absolute;
-        right: -30%;
-      }
-      .footcol2{
-        float: right;
-        font-size: 80%;
-        width: 100%;
-      }
-      .col3{
-        width: 33.1%;
-      }
-      .footrow2{
-        margin-top: 0%;
-      }
+/* Phone (L) */
+@media only screen and (min-width: 425px) {
+  .header .row1 .col1 h1{
+    font-size: 60pt;
   }
+  .header .row1 .col1 p{
+    margin-top: -20%;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 17%;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  .header .row1 .col1 p{
+    margin-top: -5rem;
+  }
+  .header .row{
+    margin: auto;
+  }
+  .header .btn button{
+    position: relative;
+    margin: 0%;
+    margin-top: -24rem;
+  }
+  .onDemand p{
+    margin-top: 0%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {  
+  .header {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    height: 90vh;
+    width: 100%;
+    font-weight: 900;
+  }
+  .header .row1 .col1 h1{
+    font-size: 90pt;
+  }
+  .header .row1 .col1 p{
+    background-color: rgba(255, 255, 255, 0.167);
+  }
+  .header .btn{
+    position: absolute;
+    bottom: 0%;
+  }
+  .services{
+    display: flex;
+  }
+  .services .box{
+    max-height: 19rem;
+  }
+  .services .flexServices p{
+    margin-top: auto;
+  }
+  .services .onDemand{
+    padding: 5% 2% 0%;
+    color: black;
+  }
+  .services .onDemand p{
+    margin: 9.3rem -1.1rem 0%;
+    padding: 0% .5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.435);
+  }
+  .services .sharedFlight{
+    background-size: 50% 80%;
+    padding: 1rem;
+  }
+  .services .box{
+    width: 33.3%;
+  }
+  .services .onDemand{
+    background-size:100% 130%;
+    color: white;
+  }
+  .services .sharedFlight{
+    color: white;
+    background-image: url(./images/SharedFlight.png);
+    padding: 5%;
+    background-size: 100%;
+    background-color: rgb(188,113,85);
+    background-repeat: no-repeat;
+  }
+  .destination .col2{
+    columns: 3;
+  }
+  .experience .col2{
+    display:flexbox;
+    columns: 2;
+  }
+  .experience .col2 .box{
+    height: 19rem;
+  }
+  .bookFlight{
+    height: 50vh;
+  }
+  .bookFlight h1{
+    font-size: 64pt;
+  }
+  .contact input, textarea{
+    width: 30rem;
+    margin: auto;
+    align-content: center;
+    margin-bottom: 2rem;
+  }
+  .footer .row1 .box{
+    width: 50%;
+  }
+  .footer .row1 .socialMedia{
+    text-align: right;
+  }
+  .footer .row2 {
+    display: flex;
+    flex-direction: row;
+    line-height: 170%;
+  }
+  .footer .row2 .box{
+    margin-right: auto;
+    width: 25%;
+  }
+}
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 820px) {
+  .header{
+    height: 35rem;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 50%;
+  }
+  .header .btn{
+    position: absolute;
+    bottom: 45%;
+  }
+  .services .onDemand p{
+    margin-top: 8rem;
+  }
+  .bookFlight{
+    height: 15rem;
+  }
+}
+
+
+/* Small Laptop */
+@media only screen and (min-width: 1024px) {
+  .mission, .services, .destination, .mobileApp{
+    margin-bottom: 5rem;
+  }
+  .header .row1{
+    display: flex;
+  }
+  .header .row1 .col1{
+    width: 75%;
+  }
+  .header .row1 .col1 h1{
+    font-size: 110pt;
+    margin-bottom: 7rem;
+  }
+  .header .col2 .links{
+    display: block;
+  }
+  .header .row1 .col2 .links{
+    margin-right: 0%;
+    display: flex;
+    flex-direction: row;
+  }
+  .header .row1 .col2 .links a{
+    margin: 5% 2% 0% 0%;
+    width: 6rem;
+  }
+  .header .col2 .icon{
+    margin-top: 4rem;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 10%;
+  }
+  .header .btn{
+    position: absolute;
+    right: 0%;
+    bottom: 12%;
+  }
+  .mission .col h1{
+    font-size: 39pt;
+    font-family:sans-serif;
+    padding-left: 40%;
+    line-height: 100%;
+    text-align: justify;
+  }
+  .mission .outer{
+    padding-left: 40%;
+    columns: 2;
+  }
+  .mission .col .box {
+    height: 12rem;
+    text-align: justify;
+  }
+  .services .box{
+    min-height: 30rem;
+    padding: 3%;
+  }
+  .services .flexServices p{
+    margin-top: 15rem;
+  }
+  .services .onDemand p{
+    margin-top: -1rem;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .services .sharedFlight{
+    padding-top: 21rem;
+  }
+  .destination h1{
+    font-size: 50pt;
+  }
+  .destination .col1{
+    display: block;
+    width: 50%;
+    float: left;
+    margin-left: .1rem;
+  }
+  .destination .col1 img{
+    height: 30rem;
+  }
+  .destination .col2{
+    columns: 2;
+    width: 49%;
+    float: right;
+    height: fit-content;
+  }
+  .destination .col2 .box{
+    margin-bottom: .5rem;
+  }
+  .mobileApp{
+    clear: both;
+    float: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .mobileApp .col1, .mobileApp .col2{
+    margin: 5rem 1rem auto auto;
+    padding: 2%;
+    width: 50%;
+    height: 22rem;
+    border-radius: 30px;
+  }
+  .experience .row1{
+    font-size: 100pt;
+    margin-bottom: 0%;
+  }
+  .experience .row2{
+    display: flex;
+    margin-right: -2rem;
+  }
+  .experience .row2 .col1{
+    width: 33%;
+  }
+  .experience .row2 .col1 button{
+    display: block;
+  }
+  .experience .row2 .col2{
+    width: 55%;
+    margin:auto ;
+    display: flexbox;
+  }
+  .experience .row2 .col2 .box{
+    height: 20rem;
+    padding: 0%;
+    margin-bottom: 4rem;
+    border: none;
+    text-align: justify;
+  }
+  .bookFlight{
+    height: 60vh;
+    padding: auto;
+    margin: 15rem auto 0;
+    font-size: x-large;
+    animation-name: changingColors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    *{
-        box-sizing: border-box;
-    }
-    .Header .column1 h1{
-        font-size: 400%;
-        width: 100%;
-      }
-      .Header .column2{
-        width: 100%;
-        float: none;
-      }
-      .link{
-        display: none;
-      }
-      .pAviation{
-        position: relative;
-        display: block;
-        float: none;
-        font-size: 50%;
-        width: 100%;
-        text-align: left;
-      }
-      #airplane{
-        right: 2%;
-        width: 7%;
-      }
-      
-      #menu{
-        position: absolute;
-        right: 2%;
-        top: 12%;
-        width: 7%;
-      }
-      .Header .column2 .btn{
-        position: relative;
-        display: flex;
-        width: 100%;
-        padding: 10%;
-        margin-top: 20%
-      }
-
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+@media only screen and (min-width: 1440px) {
+.header{
+  height: 90vh;
+}
 }
 
+@media only screen and (min-width: 1900px) {
+  body{
+    margin: auto 10%;
+    border: .5px solid rgb(236, 234, 234);
+  }
+}
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .body, .header, .mission, .destination, .experience, .footer, .slideShow{
+    background-color: black;
+    color: white;
+  }
+  .body .services .onDemand{
+    color: white;
+    background-image:inherit;
+    height: fit-content;
+  }
+  .body .services .onDemand p{
+    color: white;
+    background-image:inherit;
+  }
+  .body .services .sharedFlight{
+    background-color: rgb(31, 13, 13);
+    color: white;
+  }
+  .experience .col2 .box{
+    background-color: black;
+    color: white;
+  }
+  .experience .col2 .box img{
+    background-color: white;
+    border-radius: 1px 1px 30px 1px ;
+  }
+  .bookFlight{
+    background-image:unset;
+    background-color: black;
+    
+  }
+}
