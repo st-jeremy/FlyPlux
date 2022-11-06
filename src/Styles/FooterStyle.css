@@ -1,0 +1,38 @@
+/* Footer */
+.footer{
+  background-color: black;
+  color: white;
+}
+.footer .row1{
+  display: flex;
+}
+.footer .row1 .socialMedia{
+  position: absolute;
+  right: 0%;
+  margin-right: 2rem;
+  text-align: right;
+}
+.footer a{
+  color: rgb(186, 183, 183);
+}
+
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) {  
+  .footer .row1 .box{
+    width: 50%;
+  }
+  .footer .row1 .socialMedia{
+    text-align: right;
+  }
+  .footer .row2 {
+    display: flex;
+    flex-direction: row;
+    line-height: 170%;
+  }
+  .footer .row2 .box{
+    margin-right: auto;
+    width: 25%;
+  }
+}

@@ -16,7 +16,7 @@ const images = [image1, image2, image3, image4, image5, image6, image7, image8, 
 
 const zoomOutProperties = {
     duration: 2000,
-    transitionDuration: 500,
+    transitionDuration: 300,
     infinite: true,
     indicators: true,
     scale: 0.4,
@@ -24,9 +24,8 @@ const zoomOutProperties = {
 };
 
 const mystyle = {
-    // height: "",
     padding: "0 5%",
-    // width: "100%"
+    borderRadius: "15rem 0 15rem 0"
   };
 
 const SlideShow = () => {

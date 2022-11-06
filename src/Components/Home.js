@@ -1,5 +1,6 @@
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import '../Styles/HomeStyle.css';
 
 import { MdArrowForward } from 'react-icons/md';
 import pic from "../images/privatejet.png";
@@ -10,13 +11,26 @@ import digitalcare from '../images/digitalcare.png';
 import membership from '../images/membership.png';
 import Neutralflight from '../images/Neutralflight.png';
 import Shared from '../images/shared.png';
+import backgroundImage from "../images/background.png";
+import { NavLink } from 'react-router-dom';
 
 import SlideShow from './SlideShow';
 
 const Body = () => {
     return ( 
         <div className="body">
-            <Header /> 
+            <Header 
+                heading="Personalized Aviation"
+                paragraph = 'More flexibility, freedom and choice!'
+                style={{
+                    backgroundImage: `url(${ backgroundImage })`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 100%'
+                }}
+                btn={<NavLink to="BookAircraft">
+                    <button>BookAircraft</button>
+                </NavLink>}
+            /> 
 
             <div className="mission" id='mission'>
 
@@ -199,7 +213,11 @@ const Body = () => {
             </div>
 
             <div className='slideShow' id='slideShow'>
-                <SlideShow />
+                <SlideShow 
+                    style={{
+                        borderBottomRightRadius: '16.25rem'
+                    }}
+                />
             </div>
 
             <div className='bookFlight' id='bookFlight'>

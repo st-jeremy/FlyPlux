@@ -1,10 +1,12 @@
+import '../Styles/HeaderStyle.css';
+
 // import { FiMenu } from 'react-icons/fi';
-import { MdAirplanemodeActive } from 'react-icons/md';
+// import { MdAirplanemodeActive } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
-// import background from '../images/background1.png';
 
 
-const Header = ({styleBA}) => {
+
+const Header = (props) => {
 
     const style ={
         height: '40px',
@@ -13,27 +15,16 @@ const Header = ({styleBA}) => {
         padding: '0'
     };
 
-    // const styleBA={
-    //     backgroundImage: 'url(./images/download.png);',
-    //     color: 'red'
-    //   };
-
-    const headerMainStyle ={
-        backgroundImage: "url(../images/background.png)",
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100% 100%',
-    };
-
     //   <div className={`${isABC ? 'contactHeader': "header"}` } id='header'>
 
     return ( 
-        <div className='header' id='header' style={ headerMainStyle }>
+        <div className='header' id='header' style={ props.style } >
             <div className="row1">
                 <div className="col1">
                     <NavLink to="/">
                         <h1>FlyPlux<sup>®</sup></h1>
                     </NavLink>
-                    <p>More flexibility, freedom and choice!</p>
+                    <p>{ props.paragraph}</p>
                 </div>
 
                 <div className="col2">
@@ -41,12 +32,13 @@ const Header = ({styleBA}) => {
                         <NavLink to="/Solutions">Solutions</NavLink>
                         <NavLink to="/AboutUs">About Us</NavLink>
                         <NavLink to="/Contact">Contact Us</NavLink>
+
                     </div>
 
                     <div className="icon">
-                        <NavLink to="BookAircraft">
+                        {/* <NavLink to="BookAircraft">
                             <MdAirplanemodeActive  style={ style } />
-                        </NavLink>
+                        </NavLink> */}
                         {/* <br /> */}
                         {/* <FiMenu /> */}
                         
@@ -63,13 +55,16 @@ const Header = ({styleBA}) => {
             </div>
                 
             <div className="row">
-                <h2>Personalized Aviation</h2>
+                <h1>{props.heading}</h1>
+                <h4>{props.subHeading}</h4>
             </div>
 
-            <div className="btn">
-                <NavLink to="BookAircraft">
-                    <button>Book an Aircraft</button>
-                </NavLink>
+            <div className="button">
+
+                {props.btn}
+                {/* <NavLink to="BookAircraft">
+                    <button>{props.button}</button>
+                </NavLink> */}
 
                 {/* <NavLink to="SharedFlight">
                     <button>Book a Shared Flight</button>

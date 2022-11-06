@@ -1,26 +1,22 @@
-import Header from "./Header";
-// import Title from "./Title";
-import background2 from "../images/availableFlight.jpeg";
+import '../Styles/BookAircraftStyle.css';
 
+import Header from "./Header";
+import background from '../images/availableFlight.jpeg';
 
 const BookAircraft = () => {
-
-  const styleBA={
-    backgroundImage: { background2 },
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',
-    color: 'red'
-  };
 
   return ( 
     <div className="bookAircraft" >
 
-    {/* isABC style={ styleBA } */}
-      <Header style={ styleBA } />
+      <Header heading= "Book Aircraft" 
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100% 100%',
+        }} />
 
       <div className="content">
-        <h2>Book Aircraft</h2>
-        <div>
+        <div className="form">
           <form action="">
             <label htmlFor="from">From:</label>
             <br />

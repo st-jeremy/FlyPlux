@@ -1,3 +1,8 @@
+import '../Styles/AboutUsStyle.css';
+
+import Header from "./Header";
+import backgroundImage from "../images/Slide3.png";
+
 import jetHanger from "../images/jet_in_hanger.jpeg";
 import membership from "../images/reward_membership.png";
 import sharedFlight from "../images/exclusive_shared_flight.png";
@@ -7,8 +12,19 @@ import neutralFlight from "../images/neutral_flight.png";
 import contactImg from "../images/Slide4.jpeg"
 
 const AboutUs = () => {
+
     return ( 
         <div className="aboutUs">
+            <Header 
+                heading="About FlyPlux®"
+                subHeading = {`Technology, extensive industry knowledge and design-thinking approach. Few reasons why Hyer® is disrupting the private jet charter business. We deliver experiences that are smart, transparent, customisable and most of all, unforgettable. `}
+                style={{
+                    backgroundImage: `url(${ backgroundImage })`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 100%',
+                    borderBottomRightRadius: '6.25rem'
+                }}
+            />
             <div className="row">
                 <h1>About FlyPlux®</h1>
                 <h4>

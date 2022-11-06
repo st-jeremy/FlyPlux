@@ -1,0 +1,51 @@
+/* Contact */
+
+.contact .content{
+  padding: 5%;
+}
+.contact .col2 .box {
+  display: flex;
+}
+.contact .col2 .box .cell{
+  width: 70%; 
+}
+.contact .col2 .box .pic{
+  width: 20%; 
+}
+.contact .col label{
+  font-size: 18pt;
+  font-weight: 800;
+}
+.contact input, textarea{
+  border-radius: 20px;
+  padding: 3%;
+  width: 100%;
+}
+.contact .col{
+  align-items: center;
+  display: flex;
+}
+.contact .col form{
+  margin: auto;
+}
+.contact .col button{
+  border-radius: 30px;
+  width: 10rem;
+  font-size: 20pt;
+  font-weight: 900;
+  align-items: center;
+  padding: 2%;
+}
+
+/* ContactSummary */
+.contactSummary .content{
+  padding: 5%;
+  text-align: center;
+}
+.contactSummary img{
+  height: 5rem;
+  width: 7rem;
+}
+.contactSummary button{
+  animation-name: changingColor;
+}

@@ -1,0 +1,13 @@
+/* About Us */
+
+.aboutUs{
+  padding: 5%;
+  background-color: rgb(138,173,178);
+}
+.aboutUs .row .col2 .box img{
+  width: 70px;
+  margin-bottom: -10%;
+}
+.aboutUs .row .col2 .box{
+  margin-bottom: 2rem;
+}

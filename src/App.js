@@ -1,13 +1,13 @@
+import './index.css';
+
 import {Routes, 
   Route, 
   // Link, 
   // Outlet
 } from 'react-router-dom';
 
-import './index.css';
-import './responsive.css';
 
-import Body from './Components/Body';
+import Home from './Components/Home';
 import Contact from './Components/Contact';
 import AboutUs from './Components/AboutUs';
 import Footer from './Components/Footer';
@@ -22,7 +22,7 @@ function App() {
       <div className="app">
 
         <Routes>
-          <Route path='/' element={ <Body /> } />
+          <Route path='/' element={ <Home /> } />
 
           <Route path='BookAircraft' element={ <BookAircraft /> }></Route>
             

@@ -1,3 +1,8 @@
+import '../Styles/SolutionsStyle.css';
+
+import Header from "./Header";
+import backgroundImage from "../images/Slide3.png";
+
 import privateCharter from "../images/privateCharter.jpeg";
 import groupCharter from "../images/groupCharter.png";
 import proposeFlight from "../images/proposeFlight.png";
@@ -6,14 +11,20 @@ import elevate from "../images/elevate.jpeg";
 import altitude from "../images/altitude.jpeg";
 
 const Solutions = () => {
+
     return ( 
         <div className="solutions">
-            <div className="row">
-                <h1>Experience FlyPlux®</h1>
-                <p>
-                    Focus on enjoying the destination, not worrying about the best way to fly there. The perfect aircraft is just a detail when designing a seamless experience.
-                </p>
-            </div>
+            <Header 
+                heading="Experience FlyPlux®"
+                subHeading = {`Focus on enjoying the destination, not worrying about the best way to fly there. The perfect aircraft is just a detail when designing a seamless experience.`}
+                style={{
+                    backgroundImage: `url(${ backgroundImage })`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 100%',
+                    borderBottomRightRadius: '6.25rem'
+                }}
+                
+            />
 
 
             <div className="row">

@@ -1,3 +1,5 @@
+import '../Styles/FooterStyle.css';
+
 import { ImFacebook2 } from 'react-icons/im';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';

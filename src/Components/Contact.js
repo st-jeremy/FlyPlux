@@ -1,10 +1,13 @@
+import '../Styles/ContactStyle.css';
+
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
+import backgroundImage from "../images/Slide3.png";
 
 import call from "../images/call.png";
 import email from "../images/email.png"
 import find from "../images/find.png";
 import join from "../images/join-us.jpeg";
-import Title from "./Title";
 
 const Contact = () => {
 
@@ -12,13 +15,18 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
-            <Title />
+            <Header 
+                heading="Contact FlyPlux®"
+                subHeading = {`Technology, extensive industry knowledge and design-thinking approach. Few reasons why Hyer® is disrupting the private jet charter business. We deliver experiences that are smart, transparent, customisable and most of all, unforgettable. `}
+                style={{
+                    backgroundImage: `url(${ backgroundImage })`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 100%',
+                    borderBottomRightRadius: '6.25rem'
+                }}
+            />
             
             <div className="content">
-                <div className="row1">
-                    <div className="col1">
-                        <h1>Contact FlyPlux<sup>®</sup></h1>
-                    </div>
 
                     <div className="col2">
                         <div className="box">    
@@ -106,8 +114,6 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-           
-        </div>
      );
 }
  
