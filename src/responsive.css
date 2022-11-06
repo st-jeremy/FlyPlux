@@ -33,7 +33,7 @@
 /* Tablet */
 @media only screen and (min-width: 768px) {  
   .header {
-    background-image: url(./images/background.png);
+    /* background-image: url(./images/background.png); */
     background-repeat: no-repeat;
     background-size: 100% 120%;
     height: 90vh;
@@ -99,7 +99,7 @@
     height: 19rem;
   }
   .bookFlight{
-    height: 50vh;
+    height: 100vh;
   }
   .bookFlight h1{
     font-size: 64pt;
@@ -291,9 +291,6 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-
-}
 
 @media only screen and (min-width: 1440px) {
 .header{
@@ -312,7 +309,7 @@
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   .body, .header, .mission, .destination, .experience, .footer, .slideShow{
-    background-color: black;
+    background-color: rgb(39,37,39);
     color: white;
   }
   .body .services .onDemand{
@@ -329,7 +326,7 @@
     color: white;
   }
   .experience .col2 .box{
-    background-color: black;
+    background-color: rgb(39,37,39);
     color: white;
   }
   .experience .col2 .box img{
@@ -338,7 +335,6 @@
   }
   .bookFlight{
     background-image:unset;
-    background-color: black;
-    
+    background-color: rgb(39,37,39);
   }
 }

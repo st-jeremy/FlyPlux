@@ -1,18 +1,22 @@
 import Header from "./Header";
 // import Title from "./Title";
+import background2 from "../images/availableFlight.jpeg";
 
 
 const BookAircraft = () => {
 
   const styleBA={
-    backgroundImage: 'url(./images/download.png);',
+    backgroundImage: { background2 },
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',
     color: 'red'
-  }
+  };
 
   return ( 
-    <div className="bookAircraft">
+    <div className="bookAircraft" >
 
-      <Header isABC style={ styleBA }/>
+    {/* isABC style={ styleBA } */}
+      <Header style={ styleBA } />
 
       <div className="content">
         <h2>Book Aircraft</h2>
