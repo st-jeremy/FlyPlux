@@ -1,4 +1,6 @@
 import '../Styles/FooterStyle.css';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { ImFacebook2 } from 'react-icons/im';
 import { BsInstagram } from 'react-icons/bs';
@@ -9,7 +11,9 @@ const Footer = () => {
         <div className="footer">
             <div className="row1">
                 <div className="box">
-                    <h2>FlyPlux®</h2>
+                    <NavLink to="/">
+                        <h2>FlyPlux<sup>®</sup></h2>
+                    </NavLink>
                 </div>
 
                 <div className="box socialMedia">
@@ -23,27 +27,28 @@ const Footer = () => {
             <div className="row2">
                 <div className="box">
                     <h4>On Demand</h4>
-                    <a href="/">Private Charter</a>
+                    <Link to="./BookAircraft">Private Charter</Link>
                 </div>
 
                 <div className="box">
                     <h4>Shared Flights</h4>
-                    <a href="/">Available Flight</a><br />
-                    <a href="/">Propose a Flight</a>
+                    <Link to="/">Available Flight</Link><br />
+                    <Link to="/">Propose a Flight</Link>
                 </div>
             
                 <div className="box">
                     <h4>Company</h4>
-                    <a href="/">About us</a><br />
-                    <a href="/">Solutions</a><br />
-                    <a href="/">News</a><br />
-                    <a href="/">Contact</a>
+                    <Link to="/">About us</Link><br />
+                    <Link to="/">Solutions</Link><br />
+                    <Link to="/">News</Link><br />
+                    <Link to="/">Contact</Link>
                 </div>
             </div>
+            <br />
 
             <hr />
             <div className='row3'>
-            <p>© FlyPlux Aviation 2022 </p>
+            <p>© FlyPlux<sup>®</sup> Aviation 2022 </p>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@
 .footer{
   background-color: black;
   color: white;
+  padding: 5%;
 }
 .footer .row1{
   display: flex;
@@ -9,6 +10,7 @@
 .footer .row1 .socialMedia{
   position: absolute;
   right: 0%;
+  margin-top: .5rem;
   margin-right: 2rem;
   text-align: right;
 }
@@ -25,6 +27,7 @@
   }
   .footer .row1 .socialMedia{
     text-align: right;
+    margin-right: 3rem;
   }
   .footer .row2 {
     display: flex;

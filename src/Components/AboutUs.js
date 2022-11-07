@@ -22,7 +22,8 @@ const AboutUs = () => {
                     backgroundImage: `url(${ backgroundImage })`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
-                    borderBottomRightRadius: '6.25rem'
+                    borderBottomRightRadius: '6.25rem',
+                    height: '40rem'
                 }}
             />
             <div className="row">

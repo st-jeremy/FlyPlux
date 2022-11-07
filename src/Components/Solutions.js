@@ -1,9 +1,9 @@
 import '../Styles/SolutionsStyle.css';
 
 import Header from "./Header";
-import backgroundImage from "../images/Slide3.png";
+import backgroundImage from "../images/privateCharter.jpeg";
 
-import privateCharter from "../images/privateCharter.jpeg";
+import privateCharter from "../images/solutions.jpeg";
 import groupCharter from "../images/groupCharter.png";
 import proposeFlight from "../images/proposeFlight.png";
 import availableFlight from "../images/availableFlight.jpeg";
@@ -21,15 +21,15 @@ const Solutions = () => {
                     backgroundImage: `url(${ backgroundImage })`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
-                    borderBottomRightRadius: '6.25rem'
+                    borderBottomRightRadius: '7rem',
+                    height: '42rem',
+                    paddingBottom: '3rem'
                 }}
-                
             />
-
 
             <div className="row">
                 <div className="col1">
-                    <h2>On Demand</h2>
+                    <h1>On Demand</h1>
                 </div>
                 <div className="col2">
                     <h4>
@@ -41,37 +41,39 @@ const Solutions = () => {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="imgRow">
                 <div className="col1">
                     <img src={ privateCharter} alt="private_charter" />
             
-                    <p>
+                    <h3>
                         Private Charter
-                    </p>
+                    </h3>
                 </div>
-                <div className="col2">
+                <div className="col">
                     <img src={ groupCharter} alt="group_charter" />
-                    <p>
+                    <h3>
                         Group Charter
-                    </p>
+                    </h3>
                 </div>
             </div>
+            <hr />
 
             <div className="row">
+                
                 <div className="col1">
-                    <h3>Shared Flights</h3>
+                    <h1>Shared Flights</h1>
                 </div>
                 <div className="col2">
-                    <p>
-                    Fly on Hyer® exclusive routes booking a seat.
+                    <h4>
+                    Fly on FlyPlux® exclusive routes booking a seat.
                     <br />
 
                     Flying on a shared flight with like-minded people gives you the convenience and comfort that only private aviation can provide, for a fraction of the price. 
-                    </p>
+                    </h4>
                 </div>
             </div>
 
-            <div className="row">
+            <div className="imgRow">
                 <div className="col1">
                     <img src={ availableFlight } alt="availableFlight" />
                     <h4>Available Flights</h4>
@@ -81,29 +83,31 @@ const Solutions = () => {
                     <h4>Propose Route</h4>
                 </div>
             </div>
+            <hr />
 
             <div className="row">
+                
                 <div className="col1">
-                    <h2>Membership</h2>
+                    <h1>Membership</h1>
                 </div>
                 <div className="col2">
-                    <p>
+                    <h4>
                         Our membership program is innovative, bold and offers even more personalisation and flexibility.
                         <br />
 
                         You will start enjoying the benefits straight away. 
-                    </p>
+                    </h4>
                 </div>
             </div>
 
-            <div className="row">
+            <div className="imgRow">
                 <div className="col1">
                     <img src={ elevate } alt="elevate" />
-                    <p>Elevate</p>
+                    <h3>Elevate</h3>
                 </div>
                 <div className="col2">
                     <img src={ altitude } alt="" />
-                    <p>FlyPlux Attitude</p>
+                    <h3>FlyPlux Attitude</h3>
                 </div>
             </div>
                 

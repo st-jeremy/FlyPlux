@@ -1,0 +1,30 @@
+.solutions{
+  background-color: rgb(225,226,226);
+}
+.row, .imgRow{
+  padding: 1% 5%;
+  line-height: 2;
+}
+img{
+  border-radius: 50px 0 50px;
+}
+
+/* Small Laptop */
+@media only screen and (min-width: 1024px) {
+  .row, .imgRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .imgRow img{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    margin-right: 2rem;
+  }
+ .row .col1{
+  width: 70%;
+ }
+ .row .col2{
+  width: 45%;
+ }
+}

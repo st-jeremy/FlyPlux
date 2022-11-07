@@ -9,5 +9,6 @@
   border-bottom-right-radius: 20px;
   position: relative;
   margin-bottom: .9rem;
-  width: 12rem;
+  width: 65%;
+  padding-right: 5%;
 }

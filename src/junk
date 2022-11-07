@@ -393,3 +393,19 @@ section{
     margin-top: 17%;
   }
 
+  @media only screen and (min-width: 737px) {
+    .header .row1 .col1 p{
+      margin-top: -5rem;
+    }
+    .header .row{
+      margin: auto;
+    }
+    .header .btn button{
+      position: relative;
+      margin: 0%;
+      margin-top: -24rem;
+    }
+    .onDemand p{
+      margin-top: 0%;
+    }
+  }

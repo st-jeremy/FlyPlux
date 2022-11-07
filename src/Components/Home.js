@@ -16,25 +16,27 @@ import { NavLink } from 'react-router-dom';
 
 import SlideShow from './SlideShow';
 
-const Body = () => {
+const Home = () => {
     return ( 
-        <div className="body">
+        <div className="home">
             <Header 
                 heading="Personalized Aviation"
-                paragraph = 'More flexibility, freedom and choice!'
+                mission = 'More flexibility, freedom and choice!'
                 style={{
                     backgroundImage: `url(${ backgroundImage })`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: '100% 100%'
+                    backgroundSize: '100% 120%',
+                    height: '38rem'
                 }}
-                btn={<NavLink to="BookAircraft">
-                    <button>BookAircraft</button>
+                button={<NavLink to="BookAircraft">
+                    <button>Book Aircraft</button>
                 </NavLink>}
             /> 
 
             <div className="mission" id='mission'>
 
                 <div className="col">
+                    <hr />
                     <h1>
                         We believe that in a world where passengers have become numbers, a personal approach is key to ensure you get the most out of your flying experience.
                     </h1>
@@ -215,18 +217,19 @@ const Body = () => {
             <div className='slideShow' id='slideShow'>
                 <SlideShow 
                     style={{
-                        borderBottomRightRadius: '16.25rem'
+                        borderBottomRightRadius: '16.25px'
                     }}
                 />
             </div>
 
             <div className='bookFlight' id='bookFlight'>
                 <h4>What are you waiting for?</h4>
-                <Link to='/'><h1>Book a Flight</h1></Link>
-                
+                <Link to='./BookAircraft'>
+                    <h1>Book a Flight</h1>
+                </Link>
             </div>
         </div>
     );
 }
  
-export default Body;
+export default Home;
