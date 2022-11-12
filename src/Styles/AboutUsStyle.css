@@ -1,7 +1,14 @@
 /* About Us */
 
 .aboutUs{
-  background-color: rgb(138,173,178);
+  background-color: rgba(215, 221, 221, 0.77);
+}
+.aboutUs .row{
+  margin: 5rem 1rem;
+}
+.aboutUs .row .col1{
+  width: 40%;
+  margin-right: 3rem;
 }
 .aboutUs .row .col2 .box img{
   width: 70px;

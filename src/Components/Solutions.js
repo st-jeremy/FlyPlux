@@ -49,7 +49,7 @@ const Solutions = () => {
                         Private Charter
                     </h3>
                 </div>
-                <div className="col">
+                <div className="col2">
                     <img src={ groupCharter} alt="group_charter" />
                     <h3>
                         Group Charter

@@ -3,7 +3,7 @@ import '../Styles/AboutUsStyle.css';
 import Header from "./Header";
 import backgroundImage from "../images/about-us.jpeg";
 
-import jetHanger from "../images/aboutUs.png";
+import office from "../images/aboutUs.png";
 import membership from "../images/reward_membership.png";
 import sharedFlight from "../images/exclusive_shared_flight.png";
 import operations from "../images/operations.png";
@@ -17,7 +17,6 @@ const AboutUs = () => {
         <div className="aboutUs">
             <Header 
                 heading="About FlyPlux®"
-                subHeading = {`Technology, extensive industry knowledge and design-thinking approach. Few reasons why Hyer® is disrupting the private jet charter business. We deliver experiences that are smart, transparent, customisable and most of all, unforgettable. `}
                 style={{
                     backgroundImage: `url(${ backgroundImage })`,
                     backgroundRepeat: 'no-repeat',
@@ -28,17 +27,22 @@ const AboutUs = () => {
                 }}
             />
             <div className="row">
-                <h1>About FlyPlux®</h1>
-                <h4>
-                    Technology, extensive industry knowledge and design-thinking approach. 
-                    <br />
-                    Few reasons why Hyer® is disrupting the private jet charter business. 
-                    <br />
-                    We deliver experiences that are smart, transparent, customisable and most of all, unforgettable. 
-                </h4>
+                <div className="col1">
+                    <h1>About FlyPlux®</h1>
+                </div>
+                
+                <div className="col2">
+                    <h4>
+                        Technology, extensive industry knowledge and design-thinking approach. 
+                        <br />
+                        Few reasons why Hyer® is disrupting the private jet charter business. 
+                        <br />
+                        We deliver experiences that are smart, transparent, customisable and most of all, unforgettable. 
+                    </h4>
+                </div>
             </div>
 
-            <img src={ jetHanger } alt="jet_in_hanger" />
+            <img src={ office } alt="office" />
 
             <div className="row">
                 <div className="col1">

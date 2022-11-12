@@ -15,11 +15,17 @@
     display: flex;
     flex-direction: row;
   }
+  .imgRow .col1{
+    width: 47%;
+    margin-right: 3rem;
+  }
+  .imgRow .col2{
+    width: 47%;
+  }
   .imgRow img{
     width: 100%;
     height: 30rem;
     display: flex;
-    /* margin-right: 2rem; */
   }
  .row .col1{
   width: 70%;
@@ -27,4 +33,13 @@
  .row .col2{
   width: 45%;
  }
+}
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .solutions{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
 }
