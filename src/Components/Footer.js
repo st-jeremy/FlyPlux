@@ -40,7 +40,6 @@ const Footer = () => {
                     <h4>Company</h4>
                     <Link to="/">About us</Link><br />
                     <Link to="/">Solutions</Link><br />
-                    <Link to="/">News</Link><br />
                     <Link to="/">Contact</Link>
                 </div>
             </div>

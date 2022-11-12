@@ -29,6 +29,11 @@
 .contact .col form{
   margin: auto;
 }
+.contact .body .row4 .icon{
+  position: relative;
+  top: -2rem;
+  left: 90%;
+}
 .contact .col button{
   border-radius: 30px;
   width: 10rem;
@@ -38,6 +43,11 @@
   padding: 2%;
 }
 
+@media only screen and (min-width: 621px) {
+  .contact .body .row4 .icon{
+    top: -4rem;
+  }
+}
 
 /* Small laptop */
 @media only screen and (min-width: 1024px) {

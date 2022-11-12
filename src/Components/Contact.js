@@ -1,8 +1,12 @@
 import '../Styles/ContactStyle.css';
 
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
-import backgroundImage from "../images/Slide3.png";
+import backgroundImage from "../images/ContactBackground.png";
+import { useState } from 'react';
 
 import call from "../images/call.png";
 import email from "../images/email.png"
@@ -10,18 +14,23 @@ import find from "../images/find.png";
 import info from "../images/info.png";
 import join from "../images/join-us.jpeg";
 
-
 import { ImFacebook2 } from 'react-icons/im';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
+import { IoPersonOutline } from 'react-icons/io5';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsTelephone } from 'react-icons/bs';
+import { MdSubject } from 'react-icons/md';
+
 
 const Contact = () => {
     const iconStyle = {
         marginRight: '1rem',
         width: '40px',
         height: '40px'
-    }
+    };
 
+    const [value, setValue] = useState();
     const navigate =useNavigate();
 
     return ( 
@@ -34,7 +43,8 @@ const Contact = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
                     borderBottomRightRadius: '6.25rem',
-                    height: '38rem'
+                    height: '38rem',
+                    color: 'black'
                 }}
             />
             
@@ -135,22 +145,34 @@ const Contact = () => {
                     <form action="">
                         <label htmlFor="Name">Name*</label><br />
                         <input type="text" placeholder='E.g John Doe' required/>
+                        < IoPersonOutline className='icon'/>
                         <br />
 
                         <label htmlFor="email">Email*</label><br />
                         <input type="email" name="email" id="email" placeholder='E.g johndoe@gmail.com' required/>
+                        < AiOutlineMail className='icon'/>
                         <br />
 
                         <label htmlFor="phone">Phone*</label> <br />
-                        <input type="tel" name="phone" id="phone" required/>
+                        <PhoneInput
+                            placeholder="Enter phone number"
+                            value={value}
+                            onChange={setValue}
+                            defaultCountry="US"
+                            name="phone" 
+                            id="phone" 
+                            required
+                        />
+                        < BsTelephone className='icon' />
                         <br />
 
                         <label htmlFor="subject">Subject*</label> <br />
                         <input type="text" placeholder='Subject' required />
+                        < MdSubject className='icon'/>
                         <br />
 
                         <label htmlFor="message">Message*</label><br />
-                        <textarea rows="4" cols="100" placeholder='Message' required/>
+                        <textarea rows="4" cols="100" placeholder='Type here...' required/>
                         <br />
                     
                         <button onClick={()=> navigate('ContactSummary')}>Submit</button>

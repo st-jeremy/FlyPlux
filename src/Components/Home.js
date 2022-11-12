@@ -26,7 +26,8 @@ const Home = () => {
                     backgroundImage: `url(${ backgroundImage })`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 120%',
-                    height: '38rem'
+                    height: '38rem',
+                    color: 'black'
                 }}
                 button={<NavLink to="BookAircraft">
                     <button>Book Aircraft</button>

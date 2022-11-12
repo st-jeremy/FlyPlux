@@ -1,9 +1,9 @@
 import '../Styles/AboutUsStyle.css';
 
 import Header from "./Header";
-import backgroundImage from "../images/Slide3.png";
+import backgroundImage from "../images/about-us.jpeg";
 
-import jetHanger from "../images/jet_in_hanger.jpeg";
+import jetHanger from "../images/aboutUs.png";
 import membership from "../images/reward_membership.png";
 import sharedFlight from "../images/exclusive_shared_flight.png";
 import operations from "../images/operations.png";
@@ -23,7 +23,8 @@ const AboutUs = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
                     borderBottomRightRadius: '6.25rem',
-                    height: '40rem'
+                    height: '40rem',
+                    color: 'black'
                 }}
             />
             <div className="row">

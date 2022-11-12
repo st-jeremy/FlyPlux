@@ -1,13 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import  checkMarkGif  from "../images/checkMark.gif";
-import Title from "./Title";
 
 const ContactSummary = () => {
   const navigate = useNavigate();
 
   return ( 
     <div className="contactSummary">
-      <Title />
 
       <div className="content">
         <div className="row">

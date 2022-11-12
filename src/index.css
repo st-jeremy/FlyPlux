@@ -60,37 +60,3 @@ button{
 }
 
   
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  .body, .header, .mission, .destination, .experience, .footer, .slideShow{
-    background-color: rgb(39,37,39);
-    color: white;
-  }
-  .body .services .onDemand{
-    color: white;
-    background-image:inherit;
-    height: fit-content;
-  }
-  .body .services .onDemand p{
-    color: white;
-    background-image:inherit;
-  }
-  .body .services .sharedFlight{
-    background-color: rgb(31, 13, 13);
-    color: white;
-  }
-  .experience .col2 .box{
-    background-color: rgb(39,37,39);
-    color: white;
-  }
-  .experience .col2 .box img{
-    background-color: white;
-    border-radius: 1px 1px 30px 1px ;
-  }
-  .bookFlight{
-    background-image:unset;
-    background-color: rgb(39,37,39);
-  }
-}
-
-  

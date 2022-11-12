@@ -7,8 +7,6 @@ import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
 
-    //   <div className={`${isABC ? 'contactHeader': "header"}` } id='header'>
-
     return ( 
         <div className='header' id='header' style={ props.style } >
 

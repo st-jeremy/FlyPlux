@@ -166,6 +166,9 @@
 .slideShow button{
   animation: none;
 }
+.slideShow img{
+  border-radius: 0%;
+}
 
 /* bookFlight */
 .bookFlight{
@@ -175,7 +178,7 @@
     rgb(183, 208, 233) 20%,
     rgb(148,173,199) 100%
     );
-    height: 45rem;
+    height: 15rem;
     text-align: center;
     margin: auto;
     padding-top: 2rem;
@@ -258,9 +261,6 @@
   }
   .experience .col2 .box{
     height: 19rem;
-  }
-  .bookFlight{
-    height: 100vh;
   }
   .bookFlight h1{
     font-size: 64pt;
@@ -414,3 +414,48 @@
     border: .5px solid rgb(236, 234, 234);
   }
 }
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .body, .header, .mission, .destination, .experience, .footer, .slideShow{
+    background-color: rgb(39,37,39);
+    color: white;
+  }
+  .mission .col .box p{
+    color: white;
+  }
+  .body .services .onDemand{
+    color: white;
+    background-image:inherit;
+    height: fit-content;
+  }
+  .body .services .onDemand p{
+    color: white;
+    background-image:inherit;
+  }
+  .body .services .sharedFlight{
+    background-color: rgb(31, 13, 13);
+    color: white;
+  }
+  .experience .col2 .box{
+    background-color: rgb(39,37,39);
+    color: white;
+  }
+  .experience .col2 .box img{
+    background-color: white;
+    border-radius: 1px 1px 30px 1px ;
+  }
+ 
+  .bookFlight{
+    background-image:unset;
+    background-color: rgb(39,37,39);
+    color: white;
+  }
+  .bookFlight a{
+    color: white;
+  }
+
+}
+
+  
