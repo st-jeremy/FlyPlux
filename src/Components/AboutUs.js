@@ -22,7 +22,7 @@ const AboutUs = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%',
                     borderBottomRightRadius: '6.25rem',
-                    height: '40rem',
+                    height: '30rem',
                     color: 'black'
                 }}
             />
@@ -42,11 +42,11 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <img src={ office } alt="office" />
+            <img src={ office } alt="office" id="office" />
 
-            <div className="row">
+            <div className="row2">
                 <div className="col1">
-                    <h2>Management Team</h2>
+                    <h2>Visionary</h2>
                     <p>
                         FlyPlux® Aviation was founded by Jeremy Smith, a renowned aircraft pilot with decades of experience in the aviation industry.
                     </p>
@@ -66,7 +66,7 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row3">
                     <div className="col1">
                         <h2>Why FlyPlux®</h2>
                     </div>
@@ -113,16 +113,7 @@ const AboutUs = () => {
                     </div>
             </div>
 
-            {/* <div className="row">
-                <div className="col1">
-                    <h3>What our clients say</h3>
-                </div>
-                <div className="col2">
-
-                </div>
-            </div> */}
-
-            <div className="row">
+            <div className="row4">
                 <div className="col1">
                     <img src={ contactImg } alt="contact us" />
                 </div> 
@@ -132,8 +123,6 @@ const AboutUs = () => {
                         We believe that in a world that turns you into a number, we are able to use technology to deliver to you an unparalleled personalised service.
                     </h2> 
                 </div>
-
-                
             </div>
         </div>
      );

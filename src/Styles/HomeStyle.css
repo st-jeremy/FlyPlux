@@ -53,11 +53,17 @@
   color: white;
   font-weight: 900;
 }
+.services .onDemand .hide{
+  margin-top: -.5rem;
+  margin-bottom: 0%;
+  padding-bottom: 1rem;
+}
+
 .services .sharedFlight{
   color: white;
   background-image: url(../images/SharedFlight.png);
   padding: 5%;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: rgb(188,113,85);
   background-repeat: no-repeat;
 }
@@ -425,9 +431,16 @@
   .mission .col .box p{
     color: white;
   }
-  .body .services .onDemand{
+  .services .onDemand{
     color: white;
-    background-image:inherit;
+    background-image:none;
+    background-color:  rgb(26, 26, 39);
+    height: fit-content;
+  }
+  .services .sharedFlight{
+    color: white;
+    background-image:none;
+    background-color:  rgb(42, 23, 42);
     height: fit-content;
   }
   .body .services .onDemand p{

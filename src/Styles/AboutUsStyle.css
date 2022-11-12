@@ -3,17 +3,65 @@
 .aboutUs{
   background-color: rgba(215, 221, 221, 0.77);
 }
-.aboutUs .row{
-  margin: 5rem 1rem;
+.aboutUs .row1, .aboutUs .row2, .aboutUs .row3{
+  margin: 3rem 1.5rem;
 }
 .aboutUs .row .col1{
   width: 40%;
   margin-right: 3rem;
 }
-.aboutUs .row .col2 .box img{
-  width: 70px;
-  margin-bottom: -10%;
-}
-.aboutUs .row .col2 .box{
+.aboutUs .row2 .col2 .box{
   margin-bottom: 2rem;
+}
+.aboutUs .row3 .col2{
+  height: fit-content;
+}
+.aboutUs .row3 .col2 .box{
+  border: 2px solid grey;
+  padding: 2%;
+  margin-bottom: 1rem;
+}
+.aboutUs .row3 .col2 .box img{
+  width: 70px;
+  margin-bottom: -1rem;
+  border-radius: 0 0 20px 0;
+}
+.aboutUs .row4{
+  width: 100%;
+}
+.aboutUs .row4 .col2{
+  padding: 5%;
+}
+
+
+
+/* Small Laptop */
+@media only screen and (min-width: 1024px) {
+  .aboutUs #office{
+    padding: 3%;
+  }
+  .aboutUs .row2 {
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+  }
+  .aboutUs .row3{
+    clear: both;
+  }
+  .aboutUs .row3 .col2{
+    columns: 1;
+  }
+  .aboutUs .row4{
+    margin: 0rem;
+    width: 100%;
+  }
+}
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .aboutUs{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
 }
