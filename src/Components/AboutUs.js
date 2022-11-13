@@ -70,6 +70,7 @@ const AboutUs = () => {
                     <div className="col1">
                         <h2>Why FlyPlux®</h2>
                     </div>
+                    
                     <div className="col2">
                         <div className="box">
                             <img src= { membership }alt="reward_membership"/>

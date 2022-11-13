@@ -143,3 +143,9 @@ h1, h2{
     right: 5%;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .header{
+    position: relative;
+  }
+}

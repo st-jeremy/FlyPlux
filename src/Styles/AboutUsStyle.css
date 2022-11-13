@@ -47,6 +47,16 @@
   }
   .aboutUs .row3{
     clear: both;
+    display: flex;
+  }
+  .aboutUs .row3 .col1{
+    width: 40%;
+  }
+  .aboutUs .row3 .col2{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    width: 60%;
+    columns: 2;
   }
   .aboutUs .row3 .col2{
     columns: 1;
@@ -54,6 +64,14 @@
   .aboutUs .row4{
     margin: 0rem;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .aboutUs{
+    max-width: 1800px;
+    margin: auto;
+    border: .5px solid rgb(236, 234, 234);
   }
 }
 

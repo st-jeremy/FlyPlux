@@ -1,6 +1,13 @@
   /* NotFound */
-  .notFound{
+  .notFound .content{
     padding: 5%;
-    margin: auto;
     text-align: center;
   }
+
+  /* Dark theme */
+@media (prefers-color-scheme: dark) {
+ .notFound{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
+}

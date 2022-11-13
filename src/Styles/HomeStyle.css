@@ -38,6 +38,7 @@
 /* Services */
 .services .box{
   height: 20rem;
+  width: 100%;
 }
 .services .flexServices{
   background-color: rgb(21,22,35);
@@ -58,7 +59,6 @@
   margin-bottom: 0%;
   padding-bottom: 1rem;
 }
-
 .services .sharedFlight{
   color: white;
   background-image: url(../images/SharedFlight.png);
@@ -210,7 +210,22 @@
   }
 
 
+@media only screen and (min-width: 430px) {
+  .services .onDemand .unhide{
+    margin-top: -2.5rem;
+  }
+}
 
+@media only screen and (min-width: 617px) {
+  .services .onDemand .unhide{
+    margin-top: 7.5rem;
+  }
+}
+@media only screen and (min-width: 430px) {
+  .services{
+    display: block
+  }
+}
 
 @media only screen and (min-width: 737px) {
   .onDemand p{
@@ -277,21 +292,6 @@
     align-content: center;
     margin-bottom: 2rem;
   }
-  .footer .row1 .box{
-    width: 50%;
-  }
-  .footer .row1 .socialMedia{
-    text-align: right;
-  }
-  .footer .row2 {
-    display: flex;
-    flex-direction: row;
-    line-height: 170%;
-  }
-  .footer .row2 .box{
-    margin-right: auto;
-    width: 25%;
-  }
 }
 
 
@@ -301,6 +301,12 @@
   }
   .bookFlight{
     height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 920px) , (max-width: 1023px) {
+  .services .onDemand .unhide{
+    margin-top: 19rem;
   }
 }
 
@@ -374,6 +380,9 @@
     height: 22rem;
     border-radius: 30px;
   }
+  .experience{
+    width: 100%;
+  }
   .experience .row1{
     font-size: 100pt;
     margin-bottom: 0%;
@@ -414,9 +423,16 @@
 }
 
 
-@media only screen and (min-width: 1900px) {
-  body{
-    margin: auto 10%;
+@media only screen and (min-width: 1350px) {
+  .services .sharedFlight{
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home{
+    max-width: 1800px;
+    margin: auto;
     border: .5px solid rgb(236, 234, 234);
   }
 }
@@ -424,32 +440,35 @@
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-  .body, .header, .mission, .destination, .experience, .footer, .slideShow{
+  .home, .header, .mission, .destination, .experience, .footer, .slideShow{
     background-color: rgb(39,37,39);
     color: white;
   }
   .mission .col .box p{
     color: white;
   }
+  .services, 
+  .services .flexServices{
+    background-color: black;
+  }
   .services .onDemand{
     color: white;
     background-image:none;
-    background-color:  rgb(26, 26, 39);
-    height: fit-content;
+    background-color:   black;
+    height: 2rem;
+  }
+  .services .onDemand .unhide{
+    margin-top: -7rem;
   }
   .services .sharedFlight{
     color: white;
     background-image:none;
-    background-color:  rgb(42, 23, 42);
+    background-color:   black;
     height: fit-content;
   }
   .body .services .onDemand p{
     color: white;
     background-image:inherit;
-  }
-  .body .services .sharedFlight{
-    background-color: rgb(31, 13, 13);
-    color: white;
   }
   .experience .col2 .box{
     background-color: rgb(39,37,39);
@@ -459,16 +478,33 @@
     background-color: white;
     border-radius: 1px 1px 30px 1px ;
   }
- 
   .bookFlight{
     background-image:unset;
     background-color: rgb(39,37,39);
     color: white;
+    animation: none;
   }
   .bookFlight a{
     color: white;
   }
-
+  @media only screen and (min-width: 692px) {
+    .services .onDemand .unhide{
+      margin-top: 7rem;
+      height: 100%;
+    }
+    .services .onDemand .hide{
+      margin-top: 2rem;
+      margin-left: 0rem;
+    }
+  }
+  @media only screen and (min-width: 922px) {
+    .services .onDemand .unhide{
+      margin-top: 7rem;
+      height: 100%;
+    }
+    .services .onDemand .hide{
+      margin-top: -23rem;
+      margin-left: 0rem;
+    }
+  }
 }
-
-  

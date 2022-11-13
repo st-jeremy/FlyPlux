@@ -36,6 +36,15 @@
 }
 
 
+@media only screen and (min-width: 1600px) {
+  .solutions{
+    max-width: 1800px;
+    margin: auto;
+    border: .5px solid rgb(236, 234, 234);
+  }
+}
+
+
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   .solutions{
