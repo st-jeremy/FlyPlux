@@ -49,5 +49,6 @@
     max-width: 1800px;
     margin: auto;
     border: .5px solid rgb(236, 234, 234);
+    position: relative;
   }
 }

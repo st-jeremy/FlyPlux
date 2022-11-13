@@ -2,6 +2,7 @@
 
 .bookAircraft .content{
   padding: 5%;
+  justify-content: center;
 }
 .bookAircraft input{
   border-top: none;
@@ -9,6 +10,25 @@
   border-bottom-right-radius: 20px;
   position: relative;
   margin-bottom: .9rem;
-  width: 65%;
+  width: 20rem;
+  height: 2rem;
   padding-right: 5%;
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .bookAircraft{
+    max-width: 1800px;
+    margin: auto;
+    border: .5px solid rgb(236, 234, 234);
+  }
+}
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .bookAircraft{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
 }
