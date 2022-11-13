@@ -1,17 +1,20 @@
 /* Header */
-a.active{
+.header a.active{
   font-weight: 900;
 }
 
-h1, h2{
+.header h1, .header h2{
   animation-name: textDrop;
   animation-duration: .5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-timing-function: ease;
 }
+.header button{
+  animation: none;
+}
 
-.box6 button{
+.header .box6 button{
   animation: none;
   background-color: black;
   color: white;
@@ -40,6 +43,15 @@ h1, h2{
   position: absolute;
   top: 3%;
   right: 7%;
+}
+.header #menu a{
+  width: 100%;
+  padding: 3% 0%;
+  color: white;
+}
+.header #menu a:hover{
+  color: rgb(121, 121, 132);
+  cursor: pointer;
 }
 .header .box4{
   position: relative;

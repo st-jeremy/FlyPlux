@@ -1,7 +1,22 @@
+
+/* Solutions */
+
+.solutions button{
+  font-family: MuseoModerno;
+  padding: .7rem;
+  border-radius: 10px;
+  border: none;
+  animation-name: changingColors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
 .solutions{
   background-color: rgb(225,226,226);
 }
-.row, .imgRow{
+.solutions .row, .solutions .imgRow{
   padding: 1% 5%;
   line-height: 2;
 }

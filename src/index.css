@@ -41,18 +41,6 @@ a{
   100% {margin-top: auto;}
 }
 
-button{
-  font-family: MuseoModerno;
-  padding: .7rem;
-  border-radius: 10px;
-  border: none;
-  animation-name: changingColors;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
-
 
 /* App */
 .app{

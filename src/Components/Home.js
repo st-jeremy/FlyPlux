@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/HomeStyle.css';
 
 import { MdArrowForward } from 'react-icons/md';
-import pic from "../images/privatejet.png";
+import pic from "../images/private_jet.png";
 import phone from "../images/mobile-app.png";
 import Flightmanager from '../images/Flightmanager.png';
 import AddOn from '../images/Add-on.png';
@@ -17,6 +17,8 @@ import { NavLink } from 'react-router-dom';
 import SlideShow from './SlideShow';
 
 const Home = () => {
+
+      
     return ( 
         <div className="home">
             <Header 
@@ -79,7 +81,10 @@ const Home = () => {
                         <p>
                             Smart solutions for all your charter requirements
                         </p>
-                        <button>All solutions</button>
+
+                        <NavLink to="/Solutions">
+                            <button>All solutions</button>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -160,7 +165,10 @@ const Home = () => {
                             We offer <b>personalised experiences</b> with our <b>on-demand charters</b> and <b>personalised flexibility</b> personalised flexibility with our <b>exclusive shared flight</b>.  We upgrade the way you fly.
                         </p>
                         <br />
-                        <button>Book an Aircraft</button>
+                        <NavLink to="/BookAircraft">
+                            <button>Book an Aircraft</button>
+                        </NavLink> 
+                        
                     </div>
                 
                     <div className="col2">

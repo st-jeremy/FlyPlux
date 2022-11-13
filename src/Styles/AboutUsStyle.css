@@ -1,4 +1,15 @@
 /* About Us */
+.aboutUs button{
+  font-family: MuseoModerno;
+  padding: .7rem;
+  border-radius: 10px;
+  border: none;
+  animation-name: changingColors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
 
 .aboutUs{
   background-color: rgba(215, 221, 221, 0.77);
