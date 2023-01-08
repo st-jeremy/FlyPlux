@@ -52,7 +52,7 @@ const Contact = () => {
 
                 <div className="row1">
                     <div className="col1">
-                        <h1>Contact FlyPlux®</h1>
+                        <h1>Contact FlyPlux<sup>®</sup></h1>
                     </div>
 
                     <div className="col2">
@@ -122,7 +122,7 @@ const Contact = () => {
                         <p>
                             Fill in the information required in the form and we will get back to you within one hour. 
                             <br />
-                            Or contact FlyPlux® via our social media channels.
+                            Or contact FlyPlux<sup>®</sup> via our social media channels.
                         </p>
 
                         <div className="socialMedia">

@@ -68,7 +68,7 @@ const AboutUs = () => {
 
             <div className="row3">
                     <div className="col1">
-                        <h2>Why FlyPlux®</h2>
+                        <h2>Why FlyPlux<sup>®</sup></h2>
                     </div>
                     
                     <div className="col2">
@@ -100,7 +100,7 @@ const AboutUs = () => {
                             <img src={ personalization} alt="personalization" />
                             <h4>Personalization</h4>
                             <p>
-                                We do not believe in “on-seize fits- all”. We take the time to understand why you need to fly so you get a solution suitable to your needs and budget.
+                                We do not believe in “one-size fits- all”. We take the time to understand why you need to fly so you get a solution suitable to your needs and budget.
                             </p>
                         </div>
 
