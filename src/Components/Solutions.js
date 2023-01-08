@@ -2,7 +2,6 @@ import '../Styles/SolutionsStyle.css';
 
 import Header from "./Header";
 import backgroundImage from "../images/privateCharter.jpeg";
-
 import privateCharter from "../images/solutions.jpeg";
 import groupCharter from "../images/groupCharter.png";
 import proposeFlight from "../images/proposeFlight.png";
@@ -65,7 +64,7 @@ const Solutions = () => {
                 </div>
                 <div className="col2">
                     <h4>
-                    Fly on FlyPlux® exclusive routes booking a seat.
+                    Fly on FlyPlux<sup>®</sup> exclusive routes booking a seat.
                     <br />
 
                     Flying on a shared flight with like-minded people gives you the convenience and comfort that only private aviation can provide, for a fraction of the price. 
@@ -107,7 +106,7 @@ const Solutions = () => {
                 </div>
                 <div className="col2">
                     <img src={ altitude } alt="" />
-                    <h3>FlyPlux Attitude</h3>
+                    <h3>FlyPlux<sup>®</sup> Attitude</h3>
                 </div>
             </div>
                 

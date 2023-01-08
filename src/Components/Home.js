@@ -190,7 +190,7 @@ const Home = () => {
 
                         <div className="box">
                             <img src={ Neutralflight } alt="Neutral flight" />
-                            <h3>CO2 Neutral Flights</h3>
+                            <h3>CO<sub>2</sub> Neutral Flights</h3>
                             <p>
                                 We play our part to ensure a more sustainable future. Via Hyer® CO2 offset program, clients can offset the entire emission of their flights.
                             </p>
