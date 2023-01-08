@@ -48,11 +48,11 @@ const AboutUs = () => {
                 <div className="col1">
                     <h2>Visionary</h2>
                     <p>
-                        FlyPlux® Aviation was founded by Jeremy Smith, a renowned aircraft pilot with decades of experience in the aviation industry.
+                    FlyPlux<sup>®</sup> Aviation was founded by Jeremy Smith, a renowned aircraft pilot with decades of experience in the aviation industry.
                     </p>
 
                     <p>
-                        Recognizing that the private charter market is still too complex. Some services, which are usually taken for granted in this sector, are not delivered at the same level as they should be. FlyPlux® was built to tackle this problem. 
+                        Recognizing that the private charter market is still too complex. Some services, which are usually taken for granted in this sector, are not delivered at the same level as they should be. FlyPlux<sup>®</sup> was built to tackle this problem. 
                     </p>
                 </div>
 
@@ -60,7 +60,7 @@ const AboutUs = () => {
                     <div className="box">
                         <h3>Jeremy Smith</h3>
                         <p>
-                            Throughout his career, Jeremy has led and shaped customer service delivery for VIP clients and has improved long-haul flight operations and corporate efficiency at leading airlines across the globe.
+                            Throughout his career, Jeremy  has led and shaped customer service delivery for VIP clients and has improved long-haul flight operations and corporate efficiency at leading airlines across the globe.
                         </p>
                     </div>
                 </div>
