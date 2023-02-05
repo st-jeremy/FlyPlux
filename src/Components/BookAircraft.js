@@ -46,8 +46,8 @@ const BookAircraft = () => {
 
             <button type="submit">Proceed</button>
           </form>
+        </div>
       </div>
-    </div>
     </div>
    );
 }
