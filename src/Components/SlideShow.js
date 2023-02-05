@@ -15,18 +15,18 @@ import image10 from "../images/Slide10.jpeg";
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
 const zoomOutProperties = {
-    duration: 2000,
-    transitionDuration: 300,
-    infinite: true,
-    indicators: true,
-    scale: 0.4,
-    arrows: true
+  duration: 2000,
+  transitionDuration: 300,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true
 };
 
 const mystyle = {
-    padding: "0 5%",
-    borderRadius: "15rem 0 15rem 0"
-  };
+  padding: "0 5%",
+  borderRadius: "15rem 0 15rem 0"
+};
 
 const SlideShow = () => {
     return (
