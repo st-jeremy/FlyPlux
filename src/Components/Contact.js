@@ -165,7 +165,7 @@ const Contact = () => {
 
                         <label htmlFor="subject">Subject*</label> <br />
                         <input type="text" placeholder='Subject' required />
-                        < MdSubject className='icon'/>
+                        <MdSubject className='icon'/>
                         <br />
 
                         <label htmlFor="message">Message*</label><br />
