@@ -47,7 +47,7 @@ const Footer = () => {
 
             <hr />
             <div className='row3'>
-            <p>© FlyPlux<sup>®</sup> Aviation 2022 </p>
+                <p>© FlyPlux<sup>®</sup> Aviation. All Rights Reserved. Copyright © {new Date().getFullYear()}</p>
             </div>
         </div>
     );
