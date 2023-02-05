@@ -1,5 +1,4 @@
 import '../Styles/BookAircraftStyle.css';
-
 import Header from "./Header";
 import background from '../images/availableFlight.jpeg';
 
@@ -22,20 +21,20 @@ const BookAircraft = () => {
           <form action="">
             <label htmlFor="from">From:</label>
             <br />
-            <input type="text" name="from" id="from" placeholder="From " required />
+            <input type="text" name="from" id="from" placeholder=" From " required />
             <br />
 
             <label htmlFor="to">To:</label>
             <br />
-            <input type="text" name="to" id="to" placeholder="To" required />
+            <input type="text" name="to" id="to" placeholder=" To" required />
             <br />
 
             <label htmlFor="Passengers">Passengers:</label>
             <br />
-            <input type="number" name="passengers" id="passengers" placeholder="No. of Passengers" required />
+            <input type="number" name="passengers" id="passengers" placeholder=" No. of Passengers" required />
             <br />
 
-            <label htmlFor="From">Go:</label>
+            <label htmlFor="">Go:</label>
             <br />
             <input type="date" name="" id="return" required/>
             <br />
