@@ -2,18 +2,15 @@ import '../Styles/ContactStyle.css';
 
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import backgroundImage from "../images/ContactBackground.png";
 import { useState } from 'react';
-
 import call from "../images/call.png";
 import email from "../images/email.png"
 import find from "../images/find.png";
 import info from "../images/info.png";
 import join from "../images/join-us.jpeg";
-
 import { ImFacebook2 } from 'react-icons/im';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
@@ -31,7 +28,7 @@ const Contact = () => {
     };
 
     const [value, setValue] = useState();
-    const navigate =useNavigate();
+    const navigate = useNavigate();
 
     return ( 
         <div className="contact">
@@ -134,7 +131,7 @@ const Contact = () => {
                         <p>
                             Your information will be kept private and confidential only to be used by FlyPlux<sup>®</sup> in accordance with our Privacy Policy. 
                             <br />
-                            Fields marked * must be completed before submitting.
+                            Fields marked <b>*</b> must be completed before submitting.
                         </p>
 
                        
@@ -143,14 +140,14 @@ const Contact = () => {
             
                 <div className="row4">
                     <form action="">
-                        <label htmlFor="Name">Name*</label><br />
+                        <label htmlFor="name">Name*</label><br />
                         <input type="text" placeholder='E.g John Doe' required/>
-                        < IoPersonOutline className='icon'/>
+                        <IoPersonOutline className='icon'/>
                         <br />
 
                         <label htmlFor="email">Email*</label><br />
                         <input type="email" name="email" id="email" placeholder='E.g johndoe@gmail.com' required/>
-                        < AiOutlineMail className='icon'/>
+                        <AiOutlineMail className='icon'/>
                         <br />
 
                         <label htmlFor="phone">Phone*</label> <br />
@@ -163,7 +160,7 @@ const Contact = () => {
                             id="phone" 
                             required
                         />
-                        < BsTelephone className='icon' />
+                        <BsTelephone className='icon' />
                         <br />
 
                         <label htmlFor="subject">Subject*</label> <br />
