@@ -18,7 +18,6 @@ import SlideShow from './SlideShow';
 
 const Home = () => {
 
-      
     return ( 
         <div className="home">
             <Header 
@@ -31,13 +30,13 @@ const Home = () => {
                     height: '38rem',
                     color: 'black'
                 }}
-                button={<NavLink to="BookAircraft">
-                    <button>Book Aircraft</button>
-                </NavLink>}
+                button={
+                    <NavLink to="BookAircraft">
+                        <button>Book Aircraft</button>
+                    </NavLink>}
             /> 
 
             <div className="mission" id='mission'>
-
                 <div className="col">
                     <hr />
                     <h1>
@@ -79,7 +78,7 @@ const Home = () => {
                     <h2>Flexible Services <MdArrowForward /></h2>
                     <div className="flex">
                         <p>
-                            Smart solutions for all your charter requirements
+                            Smart solutions for all your charter requirements.
                         </p>
 
                         <NavLink to="/Solutions">
@@ -93,7 +92,7 @@ const Home = () => {
                         On Demand <MdArrowForward />
                     </h2>
                     <p className="hide">
-                        Book your aircraft. Customize all aspects of your journey
+                        Book your aircraft. Customize all aspects of your journey.
                     </p>
                 </div>
 
@@ -192,7 +191,7 @@ const Home = () => {
                             <img src={ Neutralflight } alt="Neutral flight" />
                             <h3>CO<sub>2</sub> Neutral Flights</h3>
                             <p>
-                                We play our part to ensure a more sustainable future. Via Hyer® CO2 offset program, clients can offset the entire emission of their flights.
+                                We play our part to ensure a more sustainable future. Our CO<sub>2</sub> offset program, clients can offset the entire emission of their flights.
                             </p>
                         </div>
 
@@ -200,7 +199,7 @@ const Home = () => {
                             <img src={ digitalcare } alt="Digital care" />
                             <h3>Digital Care</h3>
                             <p>
-                                We don't do business as if it was the 80's. Receive instant estimates online. Get a quote with one click. Book your aircraft via a seamless process.
+                                We don't do business as if it was the 80's. We work in the future. Receive instant estimates online. Get a quote with one click. Book your aircraft via a seamless process.
                             </p>
                         </div>
 

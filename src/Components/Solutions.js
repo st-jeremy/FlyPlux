@@ -78,7 +78,7 @@ const Solutions = () => {
                     <h4>Available Flights</h4>
                 </div>
                 <div className="col2">
-                    <img src={ proposeFlight} alt="" />
+                    <img src={ proposeFlight} alt="propose flight" />
                     <h4>Propose Route</h4>
                 </div>
             </div>
@@ -105,7 +105,7 @@ const Solutions = () => {
                     <h3>Elevate</h3>
                 </div>
                 <div className="col2">
-                    <img src={ altitude } alt="" />
+                    <img src={ altitude } alt="altitude" />
                     <h3>FlyPlux<sup>®</sup> Attitude</h3>
                 </div>
             </div>
