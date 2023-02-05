@@ -14,7 +14,8 @@ const BookAircraft = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
           height: '25rem'
-        }} />
+        }}
+      />
 
       <div className="content">
         <div className="form">
