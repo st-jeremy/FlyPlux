@@ -107,7 +107,7 @@ const AboutUs = () => {
                             <img src={ neutralFlight}alt="neutral_flight" />
                             <h4>CO<sub>2</sub> Neutral Flights</h4>
                             <p>
-                                We play our part to ensure a more sustainable future. Via Hyer® CO2 offset program, clients can offset the entire emission of their flights.
+                                We play our part to ensure a more sustainable future. Via Flyplux<sup>®</sup>, CO<sub>2</sub> offset program, clients can offset the entire emission of their flights.
                             </p>
                         </div>
                     </div>
