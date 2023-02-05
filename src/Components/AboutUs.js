@@ -1,8 +1,6 @@
 import '../Styles/AboutUsStyle.css';
-
 import Header from "./Header";
 import backgroundImage from "../images/about-us.jpeg";
-
 import office from "../images/aboutUs.png";
 import membership from "../images/reward_membership.png";
 import sharedFlight from "../images/exclusive_shared_flight.png";
@@ -26,9 +24,10 @@ const AboutUs = () => {
                     color: 'black'
                 }}
             />
+
             <div className="row">
                 <div className="col1">
-                    <h1>About FlyPlux®</h1>
+                    <h1>About FlyPlux<sup>®</sup></h1>
                 </div>
                 
                 <div className="col2">
@@ -92,7 +91,7 @@ const AboutUs = () => {
                             <img src={ operations }alt="operations" />
                             <h4>Operational Independence</h4>
                             <p>
-                                Our asset-light model alow us to take leverage of more than 5.000 aircraft and, through innovative optimization, deliver smart and cost-competitive flights.
+                                Our asset-light model alow us to take leverage of more than 5,000 aircraft and, through innovative optimization, deliver smart and cost-competitive flights.
                             </p>
                         </div>
 
@@ -100,7 +99,7 @@ const AboutUs = () => {
                             <img src={ personalization} alt="personalization" />
                             <h4>Personalization</h4>
                             <p>
-                                We do not believe in “one-size fits- all”. We take the time to understand why you need to fly so you get a solution suitable to your needs and budget.
+                                We do not believe in “one-size-fits-all”. We take the time to understand why you need to fly so you get a solution suitable to your needs and budget.
                             </p>
                         </div>
 
