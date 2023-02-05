@@ -29,12 +29,12 @@ const BookAircraft = () => {
             <input type="text" name="to" id="to" placeholder=" To" required />
             <br />
 
-            <label htmlFor="Passengers">Passengers:</label>
+            <label htmlFor="passengers">Passengers:</label>
             <br />
             <input type="number" name="passengers" id="passengers" placeholder=" No. of Passengers" required />
             <br />
 
-            <label htmlFor="">Go:</label>
+            <label htmlFor="go">Go:</label>
             <br />
             <input type="date" name="" id="return" required/>
             <br />
