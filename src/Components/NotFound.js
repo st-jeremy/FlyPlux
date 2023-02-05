@@ -19,6 +19,7 @@ const NotFound = () => {
       <div className="content">
         <h1>Oops!</h1>
         <br />
+        
         <h2>Page Not Found</h2>
       </div>
         

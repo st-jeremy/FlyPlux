@@ -32,7 +32,7 @@ const ContactSummary = () => {
         </div>
 
         <div className="row">
-          All details provided by you will be held confidential by FlyPlux® and used in accordance with our Privacy Policy.
+          All details provided by you will be held confidential by FlyPlux<sup>®</sup> and used in accordance with our Privacy Policy.
         </div>
         <br />
         
