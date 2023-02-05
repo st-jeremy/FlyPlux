@@ -36,10 +36,10 @@ const BookAircraft = () => {
 
             <label htmlFor="go">Go:</label>
             <br />
-            <input type="date" name="" id="return" required/>
+            <input type="date" name="go" id="go" required/>
             <br />
 
-            <label htmlFor="From">Return:</label>
+            <label htmlFor="return">Return:</label>
             <br />
             <input type="date" name="return" id="return" />
             <br />
