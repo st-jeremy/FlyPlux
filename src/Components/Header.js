@@ -79,38 +79,39 @@ const Header = (props) => {
           <NavLink to="/Contact">Contact Us</NavLink>
         </div>
 
-                <div className="box3">
-                    <NavLink to="/BookAircraft">
-                        <MdAirplanemodeActive />
-                    </NavLink> 
-                    <br /> 
+        <div className="box3">
+          <NavLink to="/BookAircraft">
+            <MdAirplanemodeActive />
+          </NavLink> 
+          <br /> 
 
-                    <Menu right styles={ styles } id="menu">
-                        <div id="myLinks">
-                            <NavLink to="/Solutions">Solutions</NavLink><br />
-                            <NavLink to="/AboutUs">About Us</NavLink><br />
-                            <NavLink to="/Contact">Contact Us</NavLink><br />
-                            <a href="#bookFlight">Book Flight</a>
-                        </div> 
-                    </Menu>
-                </div>
-            </div>
+          <Menu right styles={ styles } id="menu">
+            <div id="myLinks">
+              <NavLink to="/Solutions">Solutions</NavLink><br />
+              <NavLink to="/AboutUs">About Us</NavLink><br />
+              <NavLink to="/Contact">Contact Us</NavLink><br />
+              <a href="#bookFlight">Book Flight</a>
+            </div> 
+          </Menu>
+        </div>
+      </div>
 
            
-            <div className="box4">
-                <h2>{props.heading}</h2>
-                <h3>{ props.subHeading}</h3>
-            </div>
+      <div className="box4">
+        <h2>{props.heading}</h2>
+        <h3>{ props.subHeading}</h3>
+      </div>
 
-            <div className="box5">
-                <p>{props.mission}</p>
-            </div>
+      <div className="box5">
+        <p>{props.mission}</p>
+      </div>
 
-            <div className="box6">
-                {props.button}
-            </div>
-        </div>
-     );
+      <div className="box6">
+        {props.button}
+      </div>
+    </div>
+    
+  );
 }
  
 export default Header;
