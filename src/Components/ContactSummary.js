@@ -12,14 +12,14 @@ const ContactSummary = () => {
       <Header 
         heading="Message"
         style={{
-            backgroundColor: 'grey',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100% 100%',
-            borderBottomRightRadius: '7rem',
-            height: '22rem',
-            paddingBottom: '3rem'
+          backgroundColor: 'grey',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100% 100%',
+          borderBottomRightRadius: '7rem',
+          height: '22rem',
+          paddingBottom: '3rem'
         }}
-        />
+      />
 
       <div className="content">
         <div className="row">
